@@ -1,0 +1,91 @@
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2A2A2A;
+    font-family: "Inter", sans-serif;
+}
+
+.footer {
+    width: 70%;
+    height: 100%;
+}
+
+.footer .top {
+    height: 50%;
+}
+
+.footer .bottom {
+    height: 50%;
+    border-top: dashed #003293;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .bottom .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.made {
+    margin-top: 20px;
+}
+
+.made .color {
+    color: #003193;
+    background: linear-gradient(90deg, #003193, #256dfc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.legal {
+    margin-right: 20px;
+    font-weight: bolder;
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.legal:hover {
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.question_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#button_bottom {
+    border: none;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #2A2A2A;
+}
+
+#question {
+    color: #7b7b7b;
+}
