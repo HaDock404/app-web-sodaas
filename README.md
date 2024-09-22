@@ -21,8 +21,8 @@ no description
 ## Getting Started    
 
 ```bash
-git clone https://github.com/HaDock404/app-team-sodaas.git
-cd app-team-sodaas
+git clone https://github.com/HaDock404/app-web-sodaas.git
+cd app-web-sodaas
 npm install
 ```  
 
