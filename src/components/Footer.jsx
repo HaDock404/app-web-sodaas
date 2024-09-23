@@ -10,8 +10,8 @@ function Footer(props) {
     const { language } = useContext(LanguageContext);
 
     const made = {
-        en: 'Made by @hadock404 with',
-        pl: 'Wykonane przez @hadock404'
+        en: 'Made by @haDock404 with',
+        pl: 'Wykonane przez @haDock404'
     };
     const legal1 = {
         en: 'Legal Notices',

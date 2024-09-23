@@ -1,0 +1,56 @@
+.words-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+.title-words {
+    width: 100%;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.text-words {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2A2A2A;
+    background: linear-gradient(90deg, #2A2A2A, #7b7b7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.end-words {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tournesol {
+    width: 50px;
+    height: 50px;
+}
+
+.end-word-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.end-words-info-name {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #2A2A2A;
+}
+
+.end-words-info-job {
+    font-size: 14px;
+    font-style: italic;
+}
