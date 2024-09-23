@@ -7,6 +7,7 @@ import BG from '../assets/images/bg.png'
 import Intro from './Intro'
 import Carousel from './Carousel';
 import Article from './Article';
+import Ad from './Ad';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -44,6 +45,8 @@ const button1 = {
                 button={button1[language]}
             />
             <Carousel />
+            <Article />
+            <Ad />
             <Article />
         </div>
     )

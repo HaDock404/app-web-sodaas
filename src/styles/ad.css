@@ -1,0 +1,7 @@
+.ad-section {
+    background: linear-gradient(90deg, #003193, #256dfc);
+    width: 60%;
+    height: 500px;
+    margin-bottom: 150px;
+    border-radius: 10px;
+}
