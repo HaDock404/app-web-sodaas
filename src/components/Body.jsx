@@ -8,6 +8,7 @@ import Intro from './Intro'
 import Carousel from './Carousel';
 import Article from './Article';
 import Ad from './Ad';
+import Chart from './Chart';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -47,6 +48,8 @@ const button1 = {
             <Carousel />
             <Article />
             <Ad />
+            <Article />
+            <Chart />
             <Article />
         </div>
     )
