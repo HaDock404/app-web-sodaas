@@ -10,6 +10,7 @@ import Article from './Article';
 import Ad from './Ad';
 import Chart from './Chart';
 import Words from './Words';
+import Product from './Product';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -53,6 +54,7 @@ const button1 = {
             <Chart />
             <Article />
             <Words />
+            <Product />
         </div>
     )
 }
