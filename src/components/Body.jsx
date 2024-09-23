@@ -6,6 +6,7 @@ import Notification from './Notification'
 import BG from '../assets/images/bg.png'
 import Intro from './Intro'
 import Carousel from './Carousel';
+import Article from './Article';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -43,6 +44,7 @@ const button1 = {
                 button={button1[language]}
             />
             <Carousel />
+            <Article />
         </div>
     )
 }
