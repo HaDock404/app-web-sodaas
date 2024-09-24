@@ -44,3 +44,12 @@ h1 {
 .cta-button:hover {
     background: linear-gradient(90deg, #003193, #003193);;
 }
+
+.appear {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.appear.show {
+    opacity: 1;
+}
