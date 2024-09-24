@@ -1,7 +1,26 @@
 .ad-section {
-    background: linear-gradient(90deg, #003193, #256dfc);
-    width: 60%;
+    width: 100%;
     height: 500px;
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ad-article {
+    background: linear-gradient(90deg, #003193, #256dfc);
+    width: 60%;
+    height: 100%;
     border-radius: 10px;
+}
+
+.appear {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 3s ease;
+}
+
+.appear.show {
+    opacity: 1;
+    transform: translateY(0);
 }
