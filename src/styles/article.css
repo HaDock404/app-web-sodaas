@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
     margin-bottom: 150px;
 
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 .text-article {
@@ -15,11 +13,12 @@
     align-items: flex-start;
     text-align: left;
     width: 50%;
-    padding-right: 50px;
+
 }
 
 .title-article {
     font-size: 50px;
+    width: 100%;
     margin-bottom: 10px;
     color: #003193;
     background: linear-gradient(90deg, #003193, #256dfc);
@@ -30,6 +29,7 @@
 
 .text-div {
     font-size: 20px;
+    width: 100%;
     color: #7b7b7b;
 }
 
@@ -42,10 +42,10 @@
     padding: 10px;
     background-color: white;
     background-color: yellow;
-    width: 50%;
+    width: 40%;
     height: 280px;
     border-radius: 10px;
-    margin-left: 50px;
+
   }
   
   .gradient-border::before {

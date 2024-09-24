@@ -106,6 +106,7 @@ function Body() {
             <Article 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
+                direction="row-reverse"
             />
             <Chart />
             <Article
