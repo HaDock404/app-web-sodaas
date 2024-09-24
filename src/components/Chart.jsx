@@ -8,6 +8,7 @@ function Chart() {
     const elementRef2 = useRef(null);
     const targetNumber1 = 15000;
     const targetNumber2 = 230000;
+    const boxRef = useRef(null);
 
     // Hook pour animer le premier nombre
     useEffect(() => {
@@ -71,17 +72,37 @@ function Chart() {
         return () => observer.disconnect();
       }, []);
 
+      useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+    
+        // Observer chaque élément de la liste
+        const elements = boxRef.current.querySelectorAll('.appear');
+        elements.forEach(element => observer.observe(element));
+    
+        // Clean-up pour éviter d'observer encore après le démontage
+        return () => {
+          elements.forEach(element => observer.unobserve(element));
+        };
+      }, []);
+
     return (
-        <section className='chart-section'>
-            <article className='chart-image'>
+        <section className='chart-section' ref={boxRef}>
+            <article className='chart-image appear'>
                 {/* Image ou autre contenu ici */}
             </article>
             <article className='chart-number'>
-                <div className="chart-text" ref={elementRef1}>
+                <div className="chart-text appear" ref={elementRef1}>
                     <h2 className='chart-title'>{number1.toLocaleString()}$</h2>
                     <div className='text-div'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                 </div>
-                <div className="chart-text" ref={elementRef2}>
+                <div className="chart-text appear" ref={elementRef2} id="long_appearance">
                     <h2 className='chart-title'>{number2.toLocaleString()}$</h2>
                     <div className='text-div'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                 </div>

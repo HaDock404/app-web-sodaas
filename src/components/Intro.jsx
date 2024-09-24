@@ -27,7 +27,7 @@ function Intro(props) {
 
     return (
         <div class="hero" ref={boxRef}>
-            <h1 className='appear'>
+            <h1 className='appear' id='diff_appearance'>
                 <span class="highlight">{props.word_start}</span>{props.sentence}<span class="highlight">{props.word_end}</span>.
             </h1>
             <Link to="/" class="cta-button">{props.button}</Link>

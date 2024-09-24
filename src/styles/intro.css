@@ -52,4 +52,10 @@ h1 {
 
 .appear.show {
     opacity: 1;
+    transform: translateY(0);
+}
+
+#diff_appearance {
+    transform: translateY(0);
+    transition: opacity 3s ease;
 }

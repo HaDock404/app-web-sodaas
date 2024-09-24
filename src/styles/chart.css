@@ -34,3 +34,18 @@
     background-clip: text;
     color: transparent;
 }
+
+.appear {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 3s ease;
+}
+
+.appear.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#long_appearance {
+    transition: opacity 4s ease, transform 3s ease;
+}
