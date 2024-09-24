@@ -23,7 +23,7 @@ function Body() {
         en: 'Artificial Intelligence',
         pl: 'Sztuczna Inteligencja'
     };
-    const sentence = {
+    const word_sentence = {
         en: ' in the service of world ',
         pl: ' w służbie pokoju na '
     }
@@ -31,11 +31,19 @@ function Body() {
         en: 'peace',
         pl: 'świecie'
     }
+    const word_button1 = {
+        en: 'Commitments',
+        pl: 'Zobowiązania'
+    }
 
-const button1 = {
-    en: 'Commitments',
-    pl: 'Zobowiązania'
-}
+    const article_title_01 = {
+        en: 'Test de titre',
+        pl: 'Test de titre'
+    }
+    const article_text_01 = {
+        en: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci illum obcaecati? Officia incidunt, aliquam ex consequatur maxime vero! Voluptates molestiae voluptas et neque mollitia nisi incidunt eligendi sapiente fugiat!',
+        pl: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci illum obcaecati? Officia incidunt, aliquam ex consequatur maxime vero! Voluptates molestiae voluptas et neque mollitia nisi incidunt eligendi sapiente fugiat!'
+    }
 
     return (
         <div className="main">
@@ -43,18 +51,27 @@ const button1 = {
             <Notification text={notification_text[language]} width='250px'/>
             <Intro 
                 word_start={word_start[language]}
-                sentence={sentence[language]}
+                sentence={word_sentence[language]}
                 word_end={word_end[language]}
-                button={button1[language]}
+                button={word_button1[language]}
             />
             <Carousel />
-            <Article />
+            <Article 
+                article_title={article_title_01[language]}
+                article_text={article_text_01[language]}
+            />
             <Ad />
-            <Article />
+            <Article 
+                article_title={article_title_01[language]}
+                article_text={article_text_01[language]}
+            />
             <Chart />
-            <Article />
-            <Words />
+            <Article
+                article_title={article_title_01[language]}
+                article_text={article_text_01[language]}
+            />
             <Product />
+            <Words />
         </div>
     )
 }
