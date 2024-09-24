@@ -19,6 +19,7 @@ function Body() {
         en: 'Discover our products',
         pl: 'Odkryj nasze produkty'
     };
+    //-----------------------------------------------//
     const word_start = {
         en: 'Artificial Intelligence',
         pl: 'Sztuczna Inteligencja'
@@ -35,7 +36,7 @@ function Body() {
         en: 'Commitments',
         pl: 'Zobowiązania'
     }
-
+    //-----------------------------------------------//
     const article_title_01 = {
         en: 'Test de titre',
         pl: 'Test de titre'
@@ -43,6 +44,47 @@ function Body() {
     const article_text_01 = {
         en: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci illum obcaecati? Officia incidunt, aliquam ex consequatur maxime vero! Voluptates molestiae voluptas et neque mollitia nisi incidunt eligendi sapiente fugiat!',
         pl: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci illum obcaecati? Officia incidunt, aliquam ex consequatur maxime vero! Voluptates molestiae voluptas et neque mollitia nisi incidunt eligendi sapiente fugiat!'
+    }
+    //-----------------------------------------------//
+    const words_title = {
+        en: 'Hi everyone, thx to visit us',
+        pl: 'Witam wszystkich'
+    }
+    const words_part_01 = {
+        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.',
+        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.'
+    }
+    const words_part_02 = {
+        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, ',
+        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, '
+    }
+    const words_part_03 = {
+        en: 'nam veniam ratione molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.',
+        pl: 'nam veniam ratione molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.'
+    }
+    const words_part_04 = {
+        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. ',
+        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. '
+    }
+    const words_part_05 = {
+        en: ' velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.',
+        pl: ' velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.'
+    }
+    const words_part_06 = {
+        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+    }
+    const words_highlight_01 = {
+        en: 'perferendis',
+        pl: 'perferendis'
+    }
+    const words_highlight_02 = {
+        en: 'Reprehenderit',
+        pl: 'Reprehenderit'
+    }
+    const words_founder = {
+        en: 'Founder',
+        pl: 'Założyciel'
     }
 
     return (
@@ -71,7 +113,18 @@ function Body() {
                 article_text={article_text_01[language]}
             />
             <Products />
-            <Words />
+            <Words 
+                title={words_title[language]}
+                part_01={words_part_01[language]}
+                part_02={words_part_02[language]}
+                part_03={words_part_03[language]}
+                part_04={words_part_04[language]}
+                part_05={words_part_05[language]}
+                part_06={words_part_06[language]}
+                highlight_01={words_highlight_01[language]}
+                highlight_02={words_highlight_02[language]}
+                founder={words_founder[language]}
+            />
         </div>
     )
 }

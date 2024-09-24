@@ -1,30 +1,29 @@
 import '../styles/words.css'
 import Tournesol from '../assets/images/tournesol.png'
 
-function Words() {
+function Words(props) {
     return (
         <section className='words-section'>
             <article className='title-words'>
-                <span className='highlight'>Hi everyone, thx to visit us</span> 👋
+                <span className='highlight'>{props.title}</span> 👋
             </article>
             <article className='text-words'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.
+                {props.part_01}
                 <br />
                 <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, <span className='highlight'>perferendis</span> nam veniam ratione molestiae.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.
+                {props.part_02}<span className='highlight'>{props.highlight_01}</span>{props.part_03}
                 <br />
                 <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span className='highlight'>Reprehenderit</span> velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.
+                {props.part_04}<span className='highlight'>{props.highlight_02}</span>{props.part_05}
                 <br />
                 <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                {props.part_06}
             </article>
             <article className='end-words'>
                 <img src={Tournesol} alt="" className='tournesol'/>
                 <div className='end-word-info'>
                     <div className='end-words-info-name'>0xtourneSol</div>
-                    <div className='end-words-info-job'>Founder</div>
+                    <div className='end-words-info-job'>{props.founder}</div>
                 </div>
             </article>
         </section>
