@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import '../styles/carousel.css';
 import Drop_mp4 from '../assets/videos/drop.mp4'
-import Guy from '../assets/images/guy.png'
+//import Guy from '../assets/images/guy.png'
 import Aerial from '../assets/images/aerial.png'
 import Kamikaze_mp4 from '../assets/videos/kamikaze.mp4'
 import Lili from '../assets/images/lili.jpg'
