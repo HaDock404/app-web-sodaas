@@ -102,18 +102,18 @@ function Body() {
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
             />
-            <Ad />
+            <Chart />
             <Article 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
                 direction="row-reverse"
             />
-            <Chart />
+            <Products />
             <Article
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
             />
-            <Products />
+            <Ad />
             <Words 
                 title={words_title[language]}
                 part_01={words_part_01[language]}

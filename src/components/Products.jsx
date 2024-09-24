@@ -1,10 +1,32 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import { LanguageContext } from './LanguageContext';
 
 import '../styles/product.css'
 import Product from './Product'
 
 function Products() {
+
+    const boxRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+    
+        // Observer chaque élément de la liste
+        const elements = boxRef.current.querySelectorAll('.appear');
+        elements.forEach(element => observer.observe(element));
+    
+        // Clean-up pour éviter d'observer encore après le démontage
+        return () => {
+          elements.forEach(element => observer.unobserve(element));
+        };
+      }, []);
 
     const { language } = useContext(LanguageContext);
 
@@ -80,7 +102,7 @@ function Products() {
     };
 
     return (
-        <div className='product-main'>
+        <div className='product-main' ref={boxRef}>
             <Product 
                 title={title_01[language]}
                 border="solid 2px #D9D9D9"
