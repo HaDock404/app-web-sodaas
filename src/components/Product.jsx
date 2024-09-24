@@ -1,21 +1,19 @@
 import '../styles/product.css'
 
-function Product() {
+function Product(props) {
     return (
-        <div className='product-main'>
-            <section className='product-section'>
-                <div className='title-product highlight'>T-100d</div>
-                <div className='intro-product'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                <div className='image-product'></div>
-                <div className='button-product'>Découvrir notre produit</div>
-                <div className='info-product info-grey'>Lorem ipsum is sumply</div>
-                <div className='info-product'>Lorem ipsum is sumply</div>
-                <div className='info-product info-grey'>Lorem ipsum is sumply</div>
-                <div className='info-product'>Lorem ipsum is sumply</div>
-                <div className='info-product info-grey'>Lorem ipsum is sumply</div>
-                <div className='progress-product'>🙈 In Progress</div>
-            </section>
-        </div>
+        <section className='product-section' style={{border: props.border}}>
+            <div className='title-product highlight'>{props.title}</div>
+            <div className='intro-product'>{props.intro}</div>
+            <div className='image-product'></div>
+            <div className='button-product'>{props.button}</div>
+            <div className='info-product info-grey'>{props.info_01}</div>
+            <div className='info-product'>{props.info_02}</div>
+            <div className='info-product info-grey'>{props.info_03}</div>
+            <div className='info-product'>{props.info_04}</div>
+            <div className='info-product info-grey'>{props.info_05}</div>
+            <div className='progress-product' style={{display: props.display}}>🙈 {props.greatings}</div>
+        </section>
     )
 }
 

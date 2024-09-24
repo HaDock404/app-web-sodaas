@@ -10,7 +10,7 @@ import Article from './Article';
 import Ad from './Ad';
 import Chart from './Chart';
 import Words from './Words';
-import Product from './Product';
+import Products from './Products';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -70,7 +70,7 @@ function Body() {
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
             />
-            <Product />
+            <Products />
             <Words />
         </div>
     )
