@@ -34,13 +34,28 @@ function Words(props) {
                 {props.part_01}
                 <br />
                 <br />
-                {props.part_02}<span className='highlight'>{props.highlight_01}</span>{props.part_03}
+                {props.part_02}
                 <br />
                 <br />
-                {props.part_04}<span className='highlight'>{props.highlight_02}</span>{props.part_05}
+                {props.part_03}
+                <span className='highlight'>{props.highlight_01}</span>
+                <br />
+                {props.part_04}
+                {props.part_05}
                 <br />
                 <br />
                 {props.part_06}
+                <span className='highlight'>{props.highlight_02}</span>
+                {props.part_06_bis}
+                <br />
+                <br />
+                {props.part_07}
+                <br />
+                <br />
+                {props.part_08}
+                <br />
+                <br />
+                {props.part_09}
             </article>
             <article className='end-words appear'>
                 <img src={Tournesol} alt="" className='tournesol'/>

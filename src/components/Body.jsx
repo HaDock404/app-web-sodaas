@@ -51,36 +51,52 @@ function Body() {
         pl: 'Witam wszystkich'
     }
     const words_part_01 = {
-        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.',
-        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.'
+        en: 'At sODAAS - AI, we take pride in driving innovative projects that address technological shifts in an unpredictable and opportunity-rich ecosystem.',
+        pl: 'W sODAAS - AI jesteśmy dumni z prowadzenia innowacyjnych projektów, które dotyczą zmian technologicznych w nieprzewidywalnym i bogatym w możliwości ekosystemie.'
     }
     const words_part_02 = {
-        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, ',
-        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, '
+        en: 'We stand alongside those with great aspirations: building a safer, more sustainable world that is better prepared for the challenges of tomorrow.',
+        pl: 'Stoimy u boku tych, którzy mają wielkie aspiracje: budować bezpieczniejszy, bardziej zrównoważony świat, lepiej przygotowany na wyzwania jutra.'
     }
     const words_part_03 = {
-        en: 'nam veniam ratione molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.',
-        pl: 'nam veniam ratione molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.'
+        en: 'Our technologies are developed by a team with diverse skills and cultural backgrounds to create a wide range of innovative and high-performance ',
+        pl: 'Nasze technologie są opracowywane przez zespół o różnorodnych umiejętnościach i pochodzeniu kulturowym, aby stworzyć szeroką gamę innowacyjnych i wydajnych '
     }
     const words_part_04 = {
-        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. ',
-        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. '
+        en: 'These solutions lay the groundwork for a promising future by offering concrete responses to the most complex challenges.',
+        pl: 'Rozwiązania te kładą podwaliny pod obiecującą przyszłość, oferując konkretne odpowiedzi na najbardziej złożone wyzwania.'
     }
     const words_part_05 = {
-        en: ' velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.',
+        en: "Whether operating in demanding environments or strategic settings, we provide our clients with the tools and technologies they need.",
         pl: ' velit adipisci exercitationem consequuntur quis nulla architecto mollitia officia, soluta voluptates laudantium aperiam fugit, minus reiciendis, perferendis nam veniam ratione molestiae.'
     }
     const words_part_06 = {
-        en: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-        pl: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+        en: "Our mission goes beyond merely delivering services: we aspire to be trusted ",
+        pl: 'Nasza misja wykracza poza świadczenie usług: pragniemy być zaufanym '
+    }
+    const words_part_06_bis = {
+        en: ", committed to supporting our clients in their journey toward security and success.",
+        pl: ', zaangażowanym we wspieranie naszych klientów na ich drodze do bezpieczeństwa i sukcesu.'
+    }
+    const words_part_07 = {
+        en: "We help them anticipate, adapt, and innovate in their strategies, turning every challenge into an opportunity.",
+        pl: 'Pomagamy im przewidywać, dostosowywać i wprowadzać innowacje w swoich strategiach, zamieniając każde wyzwanie w szansę.'
+    }
+    const words_part_08 = {
+        en: "We remain by our clients' side, determined to support them in achieving their most ambitious goals.",
+        pl: 'Pozostajemy po stronie naszych klientów, zdeterminowani wspierać ich w osiąganiu najbardziej ambitnych celów.'
+    }
+    const words_part_09 = {
+        en: "No matter the challenge.",
+        pl: 'Bez względu na wyzwanie.'
     }
     const words_highlight_01 = {
-        en: 'perferendis',
-        pl: 'perferendis'
+        en: 'solutions.',
+        pl: 'rozwiązań.'
     }
     const words_highlight_02 = {
-        en: 'Reprehenderit',
-        pl: 'Reprehenderit'
+        en: 'partners',
+        pl: 'partnerem'
     }
     const words_founder = {
         en: 'Founder',
@@ -122,6 +138,10 @@ function Body() {
                 part_04={words_part_04[language]}
                 part_05={words_part_05[language]}
                 part_06={words_part_06[language]}
+                part_06_bis={words_part_06_bis[language]}
+                part_07={words_part_07[language]}
+                part_08={words_part_08[language]}
+                part_09={words_part_09[language]}
                 highlight_01={words_highlight_01[language]}
                 highlight_02={words_highlight_02[language]}
                 founder={words_founder[language]}
