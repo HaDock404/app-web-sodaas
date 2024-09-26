@@ -38,12 +38,12 @@ function Body() {
     }
     //-----------------------------------------------//
     const article_title_01 = {
-        en: 'Test de titre',
-        pl: 'Test de titre'
+        en: 'See the Future',
+        pl: 'Zobacz Przyszłość'
     }
     const article_text_01 = {
-        en: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci illum obcaecati? Officia incidunt, aliquam ex consequatur maxime vero! Voluptates molestiae voluptas et neque mollitia nisi incidunt eligendi sapiente fugiat!',
-        pl: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis adipisci illum obcaecati? Officia incidunt, aliquam ex consequatur maxime vero! Voluptates molestiae voluptas et neque mollitia nisi incidunt eligendi sapiente fugiat!'
+        en: 'Drones are powerful tools, conducting reconnaissance and attack missions piloted by humans. However, they are vulnerable to electromagnetic disruptions, making them unusable in strategic environments. Our technology ensures that your mission continues even in the most critical situations',
+        pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
     }
     //-----------------------------------------------//
     const words_title = {

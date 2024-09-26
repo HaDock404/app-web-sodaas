@@ -43,7 +43,7 @@
     width: 100%;
     color: #7b7b7b;
 }
-
+/*
 .gradient-border {
     position: relative;
     display: inline-block;
@@ -80,3 +80,25 @@
     border-radius: 10px;
   }
 
+*/
+
+.gradient-border {
+  padding: 10px;
+  background-color: white;
+  width: 40%;
+  height: 280px;
+  border-radius: 10px;
+  border: solid 0.5px #003193;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signal_display {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}

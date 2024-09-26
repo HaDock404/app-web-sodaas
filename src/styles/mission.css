@@ -1,0 +1,23 @@
+.mission {
+    height: 100px;
+    width: 210px;
+    margin-right: 15px;
+}
+
+.push {
+    animation: push 2s infinite ;
+}
+
+@keyframes push {
+    0% {
+        r: 10;
+    }
+    50% {
+        r: 20;
+        fill: #2af45600
+    }
+    100% {
+        r: 20;
+        fill: #2af45600
+    }
+}

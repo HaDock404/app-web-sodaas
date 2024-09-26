@@ -1,0 +1,63 @@
+#drone {
+    width: 150px;
+    height: 100px;
+    transform: translateY(0px);
+    animation: move 1s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(8px);
+    }
+}
+
+
+
+
+@keyframes turn1 {
+    0% {
+      display: none;
+    }
+    50% {
+        display: none;
+    }
+    51% {
+        display: block;
+    }
+    100% {
+        display: block;
+    }
+}
+
+@keyframes turn2 {
+    0% {
+      display: block;
+    }
+    50% {
+        display: block;
+    }
+    51% {
+        display: none;
+    }
+    100% {
+        display: none;
+    }
+}
+.fly1 {
+    animation: turn1 50ms infinite;
+  }
+.fly1-bis {
+  animation: turn2 50ms infinite;
+}
+
+.fly2 {
+    animation: turn1 50ms infinite;
+  }
+.fly2-bis {
+    animation: turn2 50ms infinite;
+}

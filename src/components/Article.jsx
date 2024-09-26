@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/article.css'
 
+import Drone from './Drone';
+import Signal from './Signal';
+import Mission from './Mission';
+
 function Article(props) {
     const boxRef = useRef(null);
 
@@ -31,7 +35,12 @@ function Article(props) {
                 <div className='text-div'>{props.article_text}</div>
             </article>
             <article className='gradient-border article_appear' id='test1'>
-                test image
+                <Drone />
+                <div className='signal_display'>
+                  <Signal />
+                  <Mission />
+                </div>
+                
             </article>
         </section>
     )

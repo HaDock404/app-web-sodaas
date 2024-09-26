@@ -1,0 +1,90 @@
+#signal {
+    width: 60px;
+    height: 80px;
+    margin-left: 50px;
+
+}
+
+.no_signal {
+    display: none;
+}
+
+#signal_circle {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        r: 15;
+    }
+    50% {
+        r: 10;
+
+    }
+    100% {
+        r: 15;
+    }
+}
+
+.signal_cirle_0 {
+    display: block;
+    animation: pulse1 1s infinite ease-in-out;
+}
+
+@keyframes pulse1 {
+    0% {
+        display: none;
+    }
+    20% {
+        display: none;
+    }
+    25% {
+        display: block;
+    }
+    60% {
+        display: none;
+    }
+    100% {
+        display: none;
+    }
+}
+
+.signal_cirle_1 {
+    display: block;
+    animation: pulse2 1s infinite ease-in-out;
+}
+
+@keyframes pulse2 {
+    0% {
+        display: none;
+    }
+    30% {
+        display: none;
+    }
+    35% {
+        display: block;
+    }
+    50% {
+        display: none;
+    }
+    100% {
+        display: none;
+    }
+}
+
+#signal_text {
+    display: block;
+
+}
+
+@keyframes text_glow {
+    0% {
+        display: none;
+    }
+    50% {
+        display: none;
+    }
+    100% {
+        display: block;
+    }
+}
