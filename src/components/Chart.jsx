@@ -100,11 +100,18 @@ function Chart(props) {
     return (
         <section className='chart-section' ref={boxRef}>
             <article className='chart-image appear'>
+              <div id='position'>
+                <Soldier />
+                <Tablet />
+                <Tank />
+                <AI />
+                <TankTarget />
+              </div>
                 {/*<Soldier />*/}
                 {/*<Tablet />*/}
                 {/*<Tank />*/}
                 {/*<AI />*/}
-                <TankTarget />
+                {/*<TankTarget />*/}
             </article>
             <article className='chart-number'>
                 <div className="chart-text appear" ref={elementRef1}>

@@ -10,13 +10,14 @@
 .chart-image {
     width: 50%;
     height: 350px;
-    background-color: grey;
+    background-color: gray;
     z-index: 5;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding-right: 75px;
+
 }
 
 .chart-number {
@@ -56,33 +57,180 @@
     transition: opacity 4s ease, transform 3s ease;
 }
 
-#test_image {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+#position {
+    position: relative;
+    width: 200px;
+    height: 200px;
 }
 
 #soldier {
     width: 200px;
     height: 200px;
+    position: absolute;
+    animation: cycle1 20s infinite;
+    opacity: 0;
 }
 
 #tablet {
     width: 200px;
     height: 200px;
+    position: absolute;
+    animation: cycle2 20s infinite;
+    opacity: 0;
 }
 
 #tank {
     width: 200px;
     height: 200px;
+    position: absolute;
+    animation: cycle3 20s infinite;
+    opacity: 0;
 }
 
 #AI {
     width: 200px;
     height: 200px;
+    position: absolute;
+    animation: cycle4 20s infinite;
+    opacity: 0;
 }
 
 #tank_target {
     width: 200px;
     height: 200px;
+    position: absolute;
+    animation: cycle5 20s infinite;
+    opacity: 0;
+}
+
+@keyframes cycle1 {
+    0% {
+        opacity: 1; /* Soldier apparait */
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0; /* Soldier disparait */
+    }
+    100% {
+        opacity: 0; /* Soldier apparait */
+    }
+}
+
+@keyframes cycle2 {
+    0% {
+        opacity: 0; /* Soldier apparait */
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1; /* Tablet apparait */
+    }
+    35% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0; /* Tablet disparait */
+    }
+    100% {
+        opacity: 0; /* Soldier apparait */
+    }
+}
+
+@keyframes cycle3 {
+    0% {
+        opacity: 0; /* Soldier apparait */
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0; /* Tablet apparait */
+    }
+    35% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1; /* Tank apparait */
+    }
+    55% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0; /* Tank disparait */
+    }
+    100% {
+        opacity: 0; /* Soldier apparait */
+    }
+}
+
+@keyframes cycle4 {
+    0% {
+        opacity: 0; /* Soldier apparait */
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0; /* Tablet apparait */
+    }
+    35% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0; /* Tank apparait */
+    }
+    55% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1; /* AI apparait */
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0; /* AI disparait */
+    }
+    100% {
+        opacity: 0; /* Soldier apparait */
+    }
+}
+
+@keyframes cycle5 {
+    0% {
+        opacity: 0; /* Soldier apparait */
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0; /* Tablet apparait */
+    }
+    35% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0; /* Tank apparait */
+    }
+    55% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0; /* AI apparait */
+    }
+    75% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1; /* Tank target apparait */
+    }
+    98% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0; /* Tank target disparait */
+    }
 }
