@@ -1,7 +1,12 @@
 import '../styles/chart.css'
 import React, { useState, useEffect, useRef } from 'react';
+import Soldier from './Soldier.jsx';
+import Tablet from './Tablet'
+import Tank from './Tank'
+import AI from './AI'
+import TankTarget from './TankTarget'
 
-function Chart() {
+function Chart(props) {
     const [number1, setNumber1] = useState(0);
     const [number2, setNumber2] = useState(0);
     const elementRef1 = useRef(null);
@@ -95,7 +100,11 @@ function Chart() {
     return (
         <section className='chart-section' ref={boxRef}>
             <article className='chart-image appear'>
-                {/* Image ou autre contenu ici */}
+                {/*<Soldier />*/}
+                {/*<Tablet />*/}
+                {/*<Tank />*/}
+                {/*<AI />*/}
+                <TankTarget />
             </article>
             <article className='chart-number'>
                 <div className="chart-text appear" ref={elementRef1}>

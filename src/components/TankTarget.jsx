@@ -2,7 +2,7 @@ import '../styles/chart.css'
 
 function TankTarget() {
     return (
-        <svg width="384" height="382" viewBox="0 0 384 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id='tank_target' width="384" height="382" viewBox="0 0 384 382" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M384 234.188C384 269.691 300.508 447.994 149.949 355.871C85.3175 355.871 -66.651 414.99 32.9234 291.585C32.9234 256.081 -40.9874 253.129 266.975 169.902C331.606 169.902 310.773 114.227 384 234.188Z" fill="#637863"/>
             <rect x="210" y="134" width="11" height="77" fill="#462C0E"/>
             <path d="M208.303 95L215.776 70L224.145 101.786L237.895 120.714L220.5 133.5L221.5 144L215.776 145H210.5L209.5 138.5L193.508 126.071L202.325 110.714L208.303 95Z" fill="#1A1A1A"/>

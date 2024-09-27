@@ -3,7 +3,7 @@ import '../styles/chart.css'
 function Tablet() {
     return (
 
-        <svg width="443" height="362" viewBox="0 0 443 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id='tablet' width="443" height="362" viewBox="0 0 443 362" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="70.2656" y="64.418" width="300.455" height="206.579" rx="15" fill="#272727"/>
             <rect x="100.924" y="85.7642" width="242.337" height="164.116" fill="#355129"/>
             <g opacity="0.75">
