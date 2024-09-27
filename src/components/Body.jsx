@@ -12,6 +12,12 @@ import Chart from './Chart';
 import Words from './Words';
 import Products from './Products';
 
+import Soldier from './Soldier';
+import Tablet from './Tablet'
+import Tank from './Tank'
+import AI from './AI'
+import TankTarget from './TankTarget'
+
 function Body() {
     const { language } = useContext(LanguageContext);
 
