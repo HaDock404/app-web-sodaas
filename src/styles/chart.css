@@ -34,7 +34,7 @@
 .chart-title {
     font-size: 30px;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 0px;
     color: #003193;
     background: linear-gradient(90deg, #003193, #256dfc);
     -webkit-background-clip: text;

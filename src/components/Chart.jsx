@@ -5,6 +5,8 @@ import Tablet from './Tablet'
 import Tank from './Tank'
 import AI from './AI'
 import TankTarget from './TankTarget'
+import TankIcon from './TankIcon.jsx';
+import DroneIcon from './DroneIcon.jsx';
 
 function Chart(props) {
     const [number1, setNumber1] = useState(0);
@@ -107,18 +109,15 @@ function Chart(props) {
                 <AI />
                 <TankTarget />
               </div>
-                {/*<Soldier />*/}
-                {/*<Tablet />*/}
-                {/*<Tank />*/}
-                {/*<AI />*/}
-                {/*<TankTarget />*/}
             </article>
             <article className='chart-number'>
                 <div className="chart-text appear" ref={elementRef1}>
+                    <DroneIcon />
                     <h2 className='chart-title'>{number1.toLocaleString()}$</h2>
                     <div className='text-div'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                 </div>
                 <div className="chart-text appear" ref={elementRef2} id="long_appearance">
+                    <TankIcon />
                     <h2 className='chart-title'>{number2.toLocaleString()}$</h2>
                     <div className='text-div'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                 </div>
