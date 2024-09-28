@@ -10,7 +10,6 @@
 .chart-image {
     width: 50%;
     height: 350px;
-    background-color: gray;
     z-index: 5;
     display: flex;
     flex-direction: row;
@@ -232,5 +231,334 @@
     }
     100% {
         opacity: 0; /* Tank target disparait */
+    }
+}
+
+.chart-image-text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.chart-image_text-color {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #003193;
+    background: linear-gradient(90deg, #003193, #256dfc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#el1 {
+    animation: el1 20s infinite;
+}
+
+#el2 {
+    animation: el2 20s infinite;
+}
+
+#el3 {
+    animation: el3 20s infinite;
+}
+
+#el4 {
+    animation: el4 20s infinite;
+}
+
+#el5 {
+    animation: el5 20s infinite;
+}
+
+@keyframes el1 {
+    0% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+    15% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    20% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    100% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+}
+
+@keyframes el2 {
+    0% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+    15% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    20% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tablet apparait */
+    }
+    35% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    40% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tablet disparait */
+    }
+    100% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+}
+
+@keyframes el3 {
+    0% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+    15% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    20% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tablet apparait */
+    }
+    35% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    40% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tank apparait */
+    }
+    55% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    60% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tank disparait */
+    }
+    100% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+}
+
+@keyframes el4 {
+    0% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+    15% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    20% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tablet apparait */
+    }
+    35% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    40% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tank apparait */
+    }
+    55% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    60% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* AI apparait */
+    }
+    75% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    80% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* AI disparait */
+    }
+    100% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+}
+
+@keyframes el5 {
+    0% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Soldier apparait */
+    }
+    15% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    20% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tablet apparait */
+    }
+    35% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    40% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tank apparait */
+    }
+    55% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    60% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* AI apparait */
+    }
+    75% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    80% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tank target apparait */
+    }
+    98% {
+        color: #003193;
+        background: linear-gradient(90deg, #003193, #256dfc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    100% {
+        color: #003193;
+        background: rgba(221, 221, 221, 0.495);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Tank target disparait */
     }
 }

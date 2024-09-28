@@ -102,6 +102,13 @@ function Chart(props) {
     return (
         <section className='chart-section' ref={boxRef}>
             <article className='chart-image appear'>
+              <div className='chart-image-text'>
+                <div className='chart-image_text-color' id='el1'>Drone Deployment</div>
+                <div className='chart-image_text-color' id='el2'>Journey and Objectives</div>
+                <div className='chart-image_text-color' id='el3'>Computer Vision</div>
+                <div className='chart-image_text-color' id='el4'>Model Prediction</div>
+                <div className='chart-image_text-color' id='el5'>Target Acquisition</div>
+              </div>
               <div id='position'>
                 <Soldier />
                 <Tablet />
@@ -114,12 +121,12 @@ function Chart(props) {
                 <div className="chart-text appear" ref={elementRef1}>
                     <DroneIcon />
                     <h2 className='chart-title'>{number1.toLocaleString()}$</h2>
-                    <div className='text-div'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div className='text-div'>Cost of an Autonomous Aircraft Systeme</div>
                 </div>
                 <div className="chart-text appear" ref={elementRef2} id="long_appearance">
                     <TankIcon />
                     <h2 className='chart-title'>{number2.toLocaleString()}$</h2>
-                    <div className='text-div'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div className='text-div'>Annual maintenance cost for a military vehicle</div>
                 </div>
             </article>
         </section>
