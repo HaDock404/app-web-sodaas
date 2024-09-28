@@ -13,6 +13,7 @@ import Words from './Words';
 import Products from './Products';
 
 import Die from './Die';
+import Die2 from './Die2';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -121,6 +122,7 @@ function Body() {
                 article_text={article_text_01[language]}
             />
             <Die />
+            <Die2 />
             <Chart />
             <Article 
                 article_title={article_title_01[language]}
