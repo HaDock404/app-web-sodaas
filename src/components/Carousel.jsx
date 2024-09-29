@@ -9,6 +9,7 @@ import Lili from '../assets/images/lili.jpg'
 import Drone from '../assets/images/drone.JPG'
 import sODAAS from '../assets/images/sodaas.svg'
 import Unet from '../assets/images/unet.jpg'
+import Led from './Led';
 
 
 function Carousel() {
@@ -144,7 +145,10 @@ function Carousel() {
         </li>
         <li className='carousel-element'>
             <div id='carousel_element_id5' className='box_carousel'>
-
+                  <div className='box_carousel_notification'>
+                      <Led />
+                      <div>@hazi and +4 are <span className='connected'>connected</span></div>
+                  </div>
             </div>
             <div id='carousel_element_id6' className='box_carousel'>
               <img src={Lili} className='image_carousel'/>
