@@ -6,8 +6,9 @@ import Drop_mp4 from '../assets/videos/drop.mp4'
 import Aerial from '../assets/images/aerial.png'
 import Kamikaze_mp4 from '../assets/videos/kamikaze.mp4'
 import Lili from '../assets/images/lili.jpg'
+import Drone from '../assets/images/drone.JPG'
+import sODAAS from '../assets/images/sodaas.svg'
 import Unet from '../assets/images/unet.jpg'
-import Github from '../assets/images/github.jpg'
 
 
 function Carousel() {
@@ -37,7 +38,7 @@ function Carousel() {
     <ul className='carousel' ref={boxRef}>
         <li className='carousel-element'>
             <div id='carousel_element_id1' className='box_carousel'>
-              <img src={Unet} className='image_carousel'/>
+              <img src={Drone} className='image_carousel'/>
             </div>
         </li>
         <li className='carousel-element'>
@@ -50,34 +51,50 @@ function Carousel() {
             <div id='carousel_element_id3' className='box_carousel'>
               <div class="box_carousel_die_message">
                           <div className='box_carousel_die_message_placement'>
-                              <img className='box_carousel_die_message_github' src={Github} alt="" />
-                              <div className='box_carousel_die_message_title'>Github</div>
+                              <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
+                              <div className='box_carousel_die_message_title'>sODAAS</div>
+                              <div className='box_carousel_die_message_time'>now</div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                          <div className='box_carousel_die_message_text'>Target localisation</div>
+                          <div className='box_carousel_die_message_info'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </div>
                       </div>
 
                       <div class="box_carousel_die_message">
                           <div className='box_carousel_die_message_placement'>
-                              <img className='box_carousel_die_message_github' src={Github} alt="" />
-                              <div className='box_carousel_die_message_title'>Github</div>
+                              <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
+                              <div className='box_carousel_die_message_title'>sODAAS</div>
+                              <div className='box_carousel_die_message_time'>10min ago</div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                          <div className='box_carousel_die_message_text'>Searching ..</div>
+                          <div className='box_carousel_die_message_info'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </div>
                       </div>
 
                       <div class="box_carousel_die_message">
                           <div className='box_carousel_die_message_placement'>
-                              <img className='box_carousel_die_message_github' src={Github} alt="" />
-                              <div className='box_carousel_die_message_title'>Github</div>
+                              <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
+                              <div className='box_carousel_die_message_title'>sODAAS</div>
+                              <div className='box_carousel_die_message_time'>15min ago</div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                          <div className='box_carousel_die_message_text'>Deployment & objectives</div>
+                          <div className='box_carousel_die_message_info'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </div>
                       </div>
 
                       <div class="box_carousel_die_message">
                           <div className='box_carousel_die_message_placement'>
-                              <img className='box_carousel_die_message_github' src={Github} alt="" />
-                              <div className='box_carousel_die_message_title'>Github</div>
+                              <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
+                              <div className='box_carousel_die_message_title'>sODAAS</div>
+                              <div className='box_carousel_die_message_time'>5min ago</div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                          <div className='box_carousel_die_message_text'>Identified vehicle</div>
+                          <div className='box_carousel_die_message_info'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </div>
                       </div>
 
                 {/*<div className='box_carousel_die'>
@@ -140,12 +157,17 @@ function Carousel() {
               </div>
             </div>
             <div id='carousel_element_id8' className='box_carousel'>
-
+              <div id='carousel_small'>small</div>
+              <div id='carousel_OD'>
+                Offensive<span id='carousel_span'>&</span>Defensive
+              </div>
+              <div id='carousel_AA'>Autonomous Aircraft</div>
+              <div id='carousel_system'>System</div>
             </div>
         </li>
         <li className='carousel-element'>
             <div id='carousel_element_id9' className='box_carousel'>
-
+              <img src={Unet} className='image_carousel'/>
             </div>
         </li>
     </ul>
