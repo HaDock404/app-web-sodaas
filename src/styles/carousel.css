@@ -18,22 +18,8 @@
     width: 18vw;
     height: 600px;
     width: 250px;
-
-    /*box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.1);*/
     margin: 15px;
-    /*border-radius: 16px;*/
-    /*
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 5s ease;
-    */
 }
-/*
-.carousel-element.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-*/
 
 .box_carousel {
     width: 100%;
@@ -57,12 +43,6 @@
     margin-top: 150px;
     height: 200px;
     transition: opacity 1s ease, transform 1s ease;
-}
-
-#carousel_element_id3 {
-    margin-top: 20px;
-    height: 100px;
-    transition: opacity 2s ease, transform 2s ease;
 }
 
 #carousel_element_id4 {
@@ -136,3 +116,205 @@ video {
     border-radius: inherit; /* Respecte les coins arrondis s'ils sont appliqués */
 }
 
+/*********************************************************************/
+
+#carousel_element_id3 {
+    margin-top: 20px;
+    height: 100px;
+    transition: opacity 2s ease, transform 2s ease;
+    background-color: #000000;
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box_carousel_die_message {
+
+    border-width: 0.5px 0px 0px 0px; /* top right bottom left */
+    border-style: dashed;
+    border-color: white;
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+    font-size: 24px;
+    transform-origin: center bottom;
+    opacity: 0;
+    animation: rotateMessages5 16s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.box_carousel_die_message:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+  .box_carousel_die_message:nth-child(2) {
+    animation-delay: 4s;
+}
+  
+  .box_carousel_die_message:nth-child(3) {
+    animation-delay: 8s;
+}
+  
+  .box_carousel_die_message:nth-child(4) {
+    animation-delay: 12s;
+}
+
+@keyframes rotateMessages5 {
+    0% {
+      transform: translate3D(0, 100%, 0) rotateX(-90deg);
+      opacity: 0;
+      z-index: 0;
+      border-width: 0.5px 0px 0px 0px;
+    }
+    10% {
+      transform: translate3D(0, 0, 0) rotateX(0deg);
+      opacity: 1;
+      z-index: 8;
+      border-width: 0px 0px 0px 0px;
+    }
+    25% {
+      transform: translate3D(0, 0, 0) rotateX(0deg);
+      opacity: 1;
+      z-index: 8;
+      border-width: 0px 0px 0px 0px;
+    }
+    35% {
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0.5;
+      z-index: 0;
+    }
+    100% {
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0;
+      z-index: 0;
+    }
+}
+
+.box_carousel_die_message_placement {
+    display: flex;
+    flex-direction: row;
+}
+
+.box_carousel_die_message_github {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+}
+
+.box_carousel_die_message_title {
+    color: white;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.box_carousel_die_message_text {
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+/*
+
+.box_carousel_die {
+    background-color: #000000;
+}
+
+.box_carousel_die_container {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box_carousel_die_message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+    font-size: 24px;
+    transform-origin: center bottom;
+    opacity: 0;
+    animation: rotateMessages5 16s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.box_carousel_die_message:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+  .box_carousel_die_message:nth-child(2) {
+    animation-delay: 4s;
+}
+  
+  .box_carousel_die_message:nth-child(3) {
+    animation-delay: 8s;
+}
+  
+  .box_carousel_die_message:nth-child(4) {
+    animation-delay: 12s;
+}
+
+@keyframes rotateMessages5 {
+    0% {
+      transform: translate3D(0, 100%, 0) rotateX(-90deg);
+      opacity: 0;
+      z-index: 0;
+    }
+    10% {
+      transform: translate3D(0, 0, 0) rotateX(0deg);
+      opacity: 1;
+      z-index: 8;
+    }
+    25% {
+      transform: translate3D(0, 0, 0) rotateX(0deg);
+      opacity: 1;
+      z-index: 8;
+    }
+    35% {
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0.5;
+      z-index: 0;
+    }
+    100% {
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0;
+      z-index: 0;
+    }
+}
+
+.box_carousel_die_message_placement {
+    display: flex;
+    flex-direction: row;
+}
+
+.box_carousel_die_message_github {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+}
+
+.box_carousel_die_message_title {
+    color: white;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.box_carousel_die_message_text {
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 20px;
+}
+*/

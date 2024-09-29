@@ -7,6 +7,7 @@ import Aerial from '../assets/images/aerial.png'
 import Kamikaze_mp4 from '../assets/videos/kamikaze.mp4'
 import Lili from '../assets/images/lili.jpg'
 import Unet from '../assets/images/unet.jpg'
+import Github from '../assets/images/github.jpg'
 
 
 function Carousel() {
@@ -45,8 +46,78 @@ function Carousel() {
                 <video src={Drop_mp4} autoPlay loop muted playsInline preload="auto" />
               </div>
             </div>
-            <div id='carousel_element_id3' className='box_carousel'>
 
+            <div id='carousel_element_id3' className='box_carousel'>
+              <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                {/*<div className='box_carousel_die'>
+                  <div class="box_carousel_die_container">
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      <div class="box_carousel_die_message">
+                          <div className='box_carousel_die_message_placement'>
+                              <img className='box_carousel_die_message_github' src={Github} alt="" />
+                              <div className='box_carousel_die_message_title'>Github</div>
+                          </div>
+                          <div className='box_carousel_die_message_text'>Marie push something</div>
+                      </div>
+
+                      
+                  </div>
+                </div>*/}
             </div>
         </li>
         <li className='carousel-element'>
