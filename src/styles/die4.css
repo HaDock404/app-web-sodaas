@@ -1,4 +1,4 @@
-.die {
+.die4 {
     width: 100%;
     height: 500px;
     background-color: #000000;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.container {
+.container4 {
     perspective: 1000px;
     width: 300px;
     height: 100px;
@@ -15,10 +15,10 @@
     overflow: hidden;
     border-width: 1px 1px 2px 1px; /* top right bottom left */
     border-style: solid;
-    border-color: #f00;
+    border-color: rgb(186, 186, 186);
   }
   
-  .message {
+  .message4 {
     position: absolute;
     width: 100%;
     height: 100px;
@@ -28,79 +28,85 @@
     background-color: #000000;
     border-width: 1px 1px 0px 1px; /* top right bottom left */
     border-style: solid;
-    border-color: #f00;
+    border-color: rgb(186, 186, 186);
     color: #fff;
     font-size: 24px;
-    transform-origin: center top;
+    transform-origin: center bottom;
     opacity: 0;
-    animation: rotateMessages 16s infinite;
+    animation: rotateMessages4 16s infinite;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
   
-  .message:nth-child(1) {
+  .message4:nth-child(1) {
     animation-delay: 0s;
   }
   
-  .message:nth-child(2) {
+  .message4:nth-child(2) {
     animation-delay: 4s;
   }
   
-  .message:nth-child(3) {
+  .message4:nth-child(3) {
     animation-delay: 8s;
   }
   
-  .message:nth-child(4) {
+  .message4:nth-child(4) {
     animation-delay: 12s;
     border-width: 1px 1px 1px 1px; /* top right bottom left */
     border-style: solid;
-    border-color: #f00;
+    border-color: rgb(186, 186, 186);
+    opacity: 0;
   }
   
-  @keyframes rotateMessages {
+  @keyframes rotateMessages4 {
     0% {
       transform: translate3D(0, 100%, 0) rotateX(-90deg);
       opacity: 0;
+      z-index: 0;
     }
     10% {
       transform: translate3D(0, 0, 0) rotateX(0deg);
       opacity: 1;
+      z-index: 8;
     }
     25% {
       transform: translate3D(0, 0, 0) rotateX(0deg);
       opacity: 1;
+      z-index: 8;
     }
     35% {
-      transform: translate3D(0, -20%, 0) rotateX(90deg);
-      opacity: 1;
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0.5;
+      z-index: 0;
     }
     100% {
-      transform: translate3D(0, -20%, 0) rotateX(90deg);
-      opacity: 1;
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0;
+      z-index: 0;
     }
 }
 
-.notification-placement {
+.notification-placement4 {
     display: flex;
     flex-direction: row;
 }
 
-.github {
+.github4 {
     width: 20px;
     height: 20px;
     margin: 20px;
 }
 
-.notification-title {
+.notification-title4 {
     color: white;
     margin-top: 22px;
     font-weight: 300;
     font-size: 16px;
 }
 
-.notification-text {
+.notification-text4 {
   font-weight: 300;
   font-size: 12px;
   margin-left: 20px;

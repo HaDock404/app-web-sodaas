@@ -14,6 +14,7 @@ import Products from './Products';
 
 import Die from './Die';
 import Die2 from './Die2';
+import Die4 from './Die4';
 
 function Body() {
     const { language } = useContext(LanguageContext);
@@ -123,6 +124,7 @@ function Body() {
             />
             <Die />
             <Die2 />
+            <Die4 />
             <Chart />
             <Article 
                 article_title={article_title_01[language]}
