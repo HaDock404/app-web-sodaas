@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/app-web-sodaas/static/css/main.994f8c62.css",
-    "main.js": "/app-web-sodaas/static/js/main.f6412b4c.js",
+    "main.css": "/app-web-sodaas/static/css/main.07e2332b.css",
+    "main.js": "/app-web-sodaas/static/js/main.2edd8060.js",
     "static/js/453.62efda2e.chunk.js": "/app-web-sodaas/static/js/453.62efda2e.chunk.js",
     "static/media/kamikaze.mp4": "/app-web-sodaas/static/media/kamikaze.2face6dc7b48e132a3ea.mp4",
     "static/media/drop.mp4": "/app-web-sodaas/static/media/drop.c1bee8815cf155259203.mp4",
     "static/media/drone.JPG": "/app-web-sodaas/static/media/drone.e9d123583ab0c2b915aa.JPG",
     "static/media/bg.png": "/app-web-sodaas/static/media/bg.c5c5939deda60462ae7c.png",
     "static/media/about_us_bg.jpg": "/app-web-sodaas/static/media/about_us_bg.ce7c95c931b76d227350.jpg",
+    "static/media/T-100d.jpg": "/app-web-sodaas/static/media/T-100d.4868bf0367cec0e41f51.jpg",
+    "static/media/T-100d.jpeg": "/app-web-sodaas/static/media/T-100d.cfa070a2f3be604f260f.jpeg",
     "static/media/aerial.png": "/app-web-sodaas/static/media/aerial.c8eb7a1894278a579612.png",
     "static/media/tournesol.png": "/app-web-sodaas/static/media/tournesol.32eb30e7e6aba67912f1.png",
+    "static/media/T-200d.jpeg": "/app-web-sodaas/static/media/T-200d.0dd797ecff0b7b020d77.jpeg",
     "static/media/lili.jpg": "/app-web-sodaas/static/media/lili.4894313c5d376119bbcd.jpg",
     "static/media/unet.jpg": "/app-web-sodaas/static/media/unet.ac4e6f311d18895b45d8.jpg",
     "index.html": "/app-web-sodaas/index.html",
     "static/media/sodaas.svg": "/app-web-sodaas/static/media/sodaas.7d6a1715f01cfe9161ff6324a6235596.svg",
-    "main.994f8c62.css.map": "/app-web-sodaas/static/css/main.994f8c62.css.map",
-    "main.f6412b4c.js.map": "/app-web-sodaas/static/js/main.f6412b4c.js.map",
+    "main.07e2332b.css.map": "/app-web-sodaas/static/css/main.07e2332b.css.map",
+    "main.2edd8060.js.map": "/app-web-sodaas/static/js/main.2edd8060.js.map",
     "453.62efda2e.chunk.js.map": "/app-web-sodaas/static/js/453.62efda2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.994f8c62.css",
-    "static/js/main.f6412b4c.js"
+    "static/css/main.07e2332b.css",
+    "static/js/main.2edd8060.js"
   ]
 }
