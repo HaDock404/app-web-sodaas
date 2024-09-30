@@ -57,7 +57,7 @@ function Words(props) {
                 <br />
                 {props.part_09}
             </article>
-            <article className='end-words appear'>
+            <article className='end-words'>
                 <img src={Tournesol} alt="" className='tournesol'/>
                 <div className='end-word-info'>
                     <div className='end-words-info-name'>0xtourneSol</div>

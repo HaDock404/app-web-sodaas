@@ -1,0 +1,5 @@
+A partir d'un modèle de Vision par Ordinateur
+
+In the field of computer vision, image segmentation plays a crucial role in many applications. The use of convolutional neural networks (CNN) has proven to be particularly effective in this task. We trained a neural network to carry out image segmentation of differents military vehicules 
+
+In the field of computer vision, image segmentation plays a crucial role in many applications. The use of convolutional neural networks (CNN) has proven to be particularly effective in this task. We trained a neural network to perform image segmentation of different military vehicles to make drones autonomous on the battlefield.

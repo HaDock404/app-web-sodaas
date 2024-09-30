@@ -14,6 +14,7 @@ import Chart from './Chart';
 import Words from './Words';
 import Products from './Products';
 import DroneArticle from '../assets/images/T-100d.jpg'
+import Action from './Action';
 
 
 function Body() {
@@ -164,12 +165,8 @@ function Body() {
                 article_text={article_text_01[language]}
                 direction="row-reverse"
             />
-            <Chart />
+            <Action />
             <Products />
-            <Article_00
-                article_title={article_title_01[language]}
-                article_text={article_text_01[language]}
-            />
             <Ad 
                 title={ad_title[language]}
                 text1={ad_text1[language]}
