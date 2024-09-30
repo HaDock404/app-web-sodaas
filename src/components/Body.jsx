@@ -6,11 +6,14 @@ import Notification from './Notification'
 import BG from '../assets/images/bg.png'
 import Intro from './Intro'
 import Carousel from './Carousel';
-import Article from './Article';
+import Article_00 from './Article_00';
+import Article_01 from './Article_01';
+import Article_02 from './Article_02';
 import Ad from './Ad';
 import Chart from './Chart';
 import Words from './Words';
 import Products from './Products';
+import DroneArticle from '../assets/images/T-100d.jpg'
 
 
 function Body() {
@@ -38,11 +41,29 @@ function Body() {
         pl: 'Zobowiązania'
     }
     //-----------------------------------------------//
+    const article_title_00 = {
+        en: 'War Changes',
+        pl: 'Zmiany Wojenne'
+    }
+    const article_text_00 = {
+        en: 'Actually no, war never changes. But today new weapons have appeared on the battlefield. Drones are major assets for armies, they are efficient and easy to use. Their use can reverse military strategy and they must now be taken into consideration.',
+        pl: 'Właściwie nie, wojna nigdy się nie zmienia. Ale dzisiaj na polu bitwy pojawiła się nowa broń. Drony są głównym atutem armii, są wydajne i łatwe w obsłudze. Ich użycie może odwrócić strategię wojskową i należy je teraz wziąć pod uwagę.'
+    }
+
     const article_title_01 = {
         en: 'See the Future',
         pl: 'Zobacz Przyszłość'
     }
     const article_text_01 = {
+        en: 'Drones are powerful tools, conducting reconnaissance and attack missions piloted by humans. However, they are vulnerable to electromagnetic disruptions, making them unusable in strategic environments. Our technology ensures that your mission continues even in the most critical situations',
+        pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
+    }
+
+    const article_title_02 = {
+        en: 'See the Future',
+        pl: 'Zobacz Przyszłość'
+    }
+    const article_text_02 = {
         en: 'Drones are powerful tools, conducting reconnaissance and attack missions piloted by humans. However, they are vulnerable to electromagnetic disruptions, making them unusable in strategic environments. Our technology ensures that your mission continues even in the most critical situations',
         pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
     }
@@ -132,18 +153,20 @@ function Body() {
                 button={word_button1[language]}
             />
             <Carousel />
-            <Article 
-                article_title={article_title_01[language]}
-                article_text={article_text_01[language]}
+            <Article_00 
+                article_title={article_title_00[language]}
+                article_text={article_text_00[language]}
+                image={DroneArticle}
             />
             <Chart />
-            <Article 
+            <Article_01 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
                 direction="row-reverse"
             />
+            <Chart />
             <Products />
-            <Article
+            <Article_00
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
             />

@@ -43,44 +43,6 @@
     width: 100%;
     color: #7b7b7b;
 }
-/*
-.gradient-border {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    background-color: white;
-    background-color: yellow;
-    width: 40%;
-    height: 280px;
-    border-radius: 10px;
-  }
-  
-  .gradient-border::before {
-    content: '';
-    position: absolute;
-    top: -0.5px;
-    left: -0.5px;
-    right: -0.5px;
-    bottom: -0.5px;
-    background: linear-gradient(90deg, #003193, #256dfc);
-    z-index: -1;
-    border-radius: 10px;
-  }
-  
-  .gradient-border::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: solid 0.5px transparent;
-    background: white;
-    z-index: 1;
-    border-radius: 10px;
-  }
-
-*/
 
 .gradient-border {
   padding: 10px;
@@ -101,4 +63,21 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.article-image {
+  width: 100%;
+  height: 100%; /* Assure que le conteneur prend toute la hauteur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Relative pour le positionnement interne */
+  overflow: hidden; /* Masque tout dépassement éventuel */
+  padding: 0; /* Suppression de tout padding éventuel */
+  margin: 0; /* Suppression des marges */
+  border-radius: inherit; /* Si tu as des coins arrondis dans le parent */
+}
+
+#gradient-border-00 {
+  padding: 20px;
 }
