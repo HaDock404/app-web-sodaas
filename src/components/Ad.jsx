@@ -1,7 +1,7 @@
 import '../styles/ad.css'
 import React, { useEffect, useRef } from 'react';
 
-function Ad() {
+function Ad(props) {
     const boxRef = useRef(null);
 
     useEffect(() => {
@@ -27,7 +27,10 @@ function Ad() {
     return (
         <section className='ad-section' ref={boxRef}>
             <article className='ad-article appear'>
-
+              <h3 className='ad-title'>{props.title}</h3>
+              <div className='ad-text1'>{props.text1}</div>
+              <div className='ad-text2'>{props.text2}</div>
+              <div className='ad-text3'>{props.text3}</div>
             </article>
         </section>
     )

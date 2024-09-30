@@ -47,6 +47,23 @@ function Body() {
         pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
     }
     //-----------------------------------------------//
+    const ad_title = {
+        en: 'Why invest with Us ?',
+        pl: 'Dlaczego warto inwestować z nami?'
+    }
+    const ad_text1 = {
+        en: "The choice of innovation requires younger and more dynamic companies. Our teams are made up of the best people in tech, with an average age of 25, it is from us that tomorrow's revolutions will come out.",
+        pl: 'Wybór innowacji wymaga młodszych i bardziej dynamicznych firm. Nasze zespoły składają się z najlepszych ludzi w technologii, ze średnią wieku 25 lat, to od nas wyjdą jutrzejsze rewolucje.'
+    }
+    const ad_text2 = {
+        en: 'Europe needs to rebuild its security, investing in companies located in the heart of Europe is the best way to protect the rest of the world.',
+        pl: 'Europa musi odbudować swoje bezpieczeństwo, inwestowanie w spółki zlokalizowane w sercu Europy to najlepszy sposób na ochronę reszty świata.'
+    }
+    const ad_text3 = {
+        en: "Let's build the best weapons of deterrence to prevent the next war.",
+        pl: 'Zbudujmy najlepszą broń odstraszającą, aby zapobiec kolejnej wojnie.'
+    }
+    //-----------------------------------------------//
     const words_title = {
         en: 'Hi everyone, thx to visit us',
         pl: 'Witam wszystkich'
@@ -130,7 +147,12 @@ function Body() {
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
             />
-            <Ad />
+            <Ad 
+                title={ad_title[language]}
+                text1={ad_text1[language]}
+                text2={ad_text2[language]}
+                text3={ad_text3[language]}
+            />
             <Words 
                 title={words_title[language]}
                 part_01={words_part_01[language]}

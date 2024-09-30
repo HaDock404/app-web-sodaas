@@ -3,7 +3,7 @@ import { LanguageContext } from './LanguageContext';
 
 import '../styles/product.css'
 import Product from './Product'
-import Drone1 from '../assets/images/T-100d.jpg'
+import Drone1 from '../assets/images/T-100d.jpeg'
 import Drone2 from '../assets/images/T-200d.jpeg'
 
 function Products() {
