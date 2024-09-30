@@ -69,6 +69,35 @@ function Body() {
         pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
     }
     //-----------------------------------------------//
+    const action_title = {
+        en: 'How It Works ?',
+        pl: 'Jak to działa ?'
+    }
+    const action_el1 = {
+        en: 'Drone Deployment',
+        pl: 'Rozmieszczenie dronów'
+    }
+    const action_el2 = {
+        en: 'Journey and Objectives',
+        pl: 'Podróż i cele'
+    }
+    const action_el3 = {
+        en: 'Computer Vision',
+        pl: 'Wizja komputerowa'
+    }
+    const action_el4 = {
+        en: 'Model Prediction',
+        pl: 'Przewidywanie modelu'
+    }
+    const action_el5 = {
+        en: 'Target Acquisition',
+        pl: 'Pozyskiwanie celu'
+    }
+    const action_text = {
+        en: 'In the field of computer vision, image segmentation plays a crucial role in many applications. The use of convolutional neural networks (CNN) has proven to be particularly effective in this task. We trained a neural network to perform image segmentation of different military vehicles to make drones autonomous on the battlefield.',
+        pl: 'W dziedzinie widzenia komputerowego segmentacja obrazu odgrywa kluczową rolę w wielu zastosowaniach. Szczególnie skuteczne w tym zadaniu okazało się wykorzystanie splotowych sieci neuronowych (CNN). Wytrenowaliśmy sieć neuronową do segmentacji obrazu różnych pojazdów wojskowych, aby drony stały się autonomiczne na polu bitwy.'
+    }
+    //-----------------------------------------------//
     const ad_title = {
         en: 'Why invest with Us ?',
         pl: 'Dlaczego warto inwestować z nami?'
@@ -165,7 +194,15 @@ function Body() {
                 article_text={article_text_01[language]}
                 direction="row-reverse"
             />
-            <Action />
+            <Action 
+                title={action_title[language]}
+                el1={action_el1[language]}
+                el2={action_el2[language]}
+                el3={action_el3[language]}
+                el4={action_el4[language]}
+                el5={action_el5[language]}
+                text={action_text[language]}
+            />
             <Products />
             <Ad 
                 title={ad_title[language]}

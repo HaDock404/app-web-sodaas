@@ -101,14 +101,14 @@ function Action(props) {
 
     return (
         <section className='action-section' ref={boxRef}>
-            <h2 className='action-title'>How It Works ?</h2>
+            <h2 className='action-title'>{props.title}</h2>
             <article className='action-image appear'>
               <div className='action-image-text'>
-                <div className='action-image_text-color' id='el1'>Drone Deployment</div>
-                <div className='action-image_text-color' id='el2'>Journey and Objectives</div>
-                <div className='action-image_text-color' id='el3'>Computer Vision</div>
-                <div className='action-image_text-color' id='el4'>Model Prediction</div>
-                <div className='action-image_text-color' id='el5'>Target Acquisition</div>
+                <div className='action-image_text-color' id='el1'>{props.el1}</div>
+                <div className='action-image_text-color' id='el2'>{props.el2}</div>
+                <div className='action-image_text-color' id='el3'>{props.el3}</div>
+                <div className='action-image_text-color' id='el4'>{props.el4}</div>
+                <div className='action-image_text-color' id='el5'>{props.el5}</div>
               </div>
               <div id='action-position'>
                 <Soldier />
@@ -120,7 +120,7 @@ function Action(props) {
             </article>
 
             <article className='action-number'>
-              In the field of computer vision, image segmentation plays a crucial role in many applications. The use of convolutional neural networks (CNN) has proven to be particularly effective in this task. We trained a neural network to perform image segmentation of different military vehicles to make drones autonomous on the battlefield.
+              {props.text}
             </article>
         </section>
     );

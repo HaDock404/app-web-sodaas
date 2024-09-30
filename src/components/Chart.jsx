@@ -101,21 +101,9 @@ function Chart(props) {
 
     return (
         <section className='chart-section' ref={boxRef}>
+            <h2 className='chart-big_title'>How to Win a War ?</h2>
             <article className='chart-image appear'>
-              <div className='chart-image-text'>
-                <div className='chart-image_text-color' id='el1'>Drone Deployment</div>
-                <div className='chart-image_text-color' id='el2'>Journey and Objectives</div>
-                <div className='chart-image_text-color' id='el3'>Computer Vision</div>
-                <div className='chart-image_text-color' id='el4'>Model Prediction</div>
-                <div className='chart-image_text-color' id='el5'>Target Acquisition</div>
-              </div>
-              <div id='position'>
-                <Soldier />
-                <Tablet />
-                <Tank />
-                <AI />
-                <TankTarget />
-              </div>
+              graphique
             </article>
             <article className='chart-number'>
                 <div className="chart-text appear" ref={elementRef1}>
