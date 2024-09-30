@@ -3,6 +3,8 @@ import { LanguageContext } from './LanguageContext';
 
 import '../styles/product.css'
 import Product from './Product'
+import Drone1 from '../assets/images/T-100d.jpg'
+import Drone2 from '../assets/images/T-200d.jpeg'
 
 function Products() {
 
@@ -35,32 +37,32 @@ function Products() {
         pl: 'T-100d'
     };
     const intro_01 = {
-        en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        en: 'Attack and Defense drone for infantry combat',
+        pl: 'Dron szturmowy i obronny do walki piechoty'
     };
     const button_01 = {
-        en: 'Découvrir notre produit',
-        pl: 'Découvrir notre produit'
+        en: 'Discover our product',
+        pl: 'Odkryj nasz produkt'
     };
     const info_01_01 = {
-        en: 'Lorem ipsum is sumply',
-        pl: 'Lorem ipsum is sumply'
+        en: 'Speed of 50km/h with small load',
+        pl: 'prędkość 50 km/h przy małym obciążeniu'
     };
     const info_01_02 = {
-        en: 'Lorem ipsum is sumply',
-        pl: 'Lorem ipsum is sumply'
+        en: '3 km range with clear weather',
+        pl: 'Zasięg 3 km przy dobrej pogodzie'
     };
     const info_01_03 = {
-        en: 'Lorem ipsum is sumply',
-        pl: 'Lorem ipsum is sumply'
+        en: 'Transport weight of 4 kg',
+        pl: 'Waga transportowa 4 kg'
     };
     const info_01_04 = {
-        en: 'Lorem ipsum is sumply',
-        pl: 'Lorem ipsum is sumply'
+        en: '10 categories of registered targets',
+        pl: '10 kategorii zarejestrowanych celów'
     };
     const info_01_05 = {
-        en: 'Lorem ipsum is sumply',
-        pl: 'Lorem ipsum is sumply'
+        en: '',
+        pl: ''
     };
 
     const title_02 = {
@@ -105,6 +107,7 @@ function Products() {
         <div className='product-main' ref={boxRef}>
             <Product 
                 title={title_01[language]}
+                image={Drone1}
                 border="solid 2px #D9D9D9"
                 display="none"
                 intro={intro_01[language]}
@@ -115,9 +118,11 @@ function Products() {
                 info_04={info_01_04[language]}
                 info_05={info_01_05[language]}
                 greatings={greatings[language]}
+                style1="white"
             />
             <Product 
                 title={title_02[language]}
+                image={Drone2}
                 border="solid 2px #003193"
                 display=""
                 intro={intro_02[language]}
@@ -128,6 +133,7 @@ function Products() {
                 info_04={info_02_04[language]}
                 info_05={info_02_05[language]}
                 greatings={greatings[language]}
+                style1='#C7C7C7'
             />
         </div>
     )

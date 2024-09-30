@@ -92,3 +92,16 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+.image_product {
+    width: 100%;
+    height: 100%; /* Assure que le conteneur prend toute la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Relative pour le positionnement interne */
+    overflow: hidden; /* Masque tout dépassement éventuel */
+    padding: 0; /* Suppression de tout padding éventuel */
+    margin: 0; /* Suppression des marges */
+    border-radius: inherit; /* Si tu as des coins arrondis dans le parent */
+}
