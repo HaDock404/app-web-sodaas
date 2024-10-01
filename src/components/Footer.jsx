@@ -30,7 +30,7 @@ function Footer(props) {
         pl: 'Wyślij nam wiadomość, a my postaramy się odpowiedzieć tak szybko, jak to możliwe.'
     }
     const button = {
-        en: 'Contact Us',
+        en: 'Contact',
         pl: 'Kontakt'
     }
 
