@@ -1,11 +1,11 @@
 footer {
-    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #2A2A2A;
     font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
 }
 
 .footer {
@@ -13,12 +13,8 @@ footer {
     height: 100%;
 }
 
-.footer .top {
-    height: 50%;
-}
-
 .footer .bottom {
-    height: 50%;
+
     border-top: dashed #003293;
     display: flex;
     flex-direction: column;
@@ -59,7 +55,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
     padding-bottom: 15px;
 }
 
@@ -68,7 +63,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    height: 100%;
+
 }
 
 #button_bottom {
@@ -78,6 +73,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: 30px;
 }
 
 .h3 {
@@ -88,4 +84,35 @@ footer {
 
 #question {
     color: #7b7b7b;
+}
+
+@media (max-width: 700px) {
+
+    .footer {
+        width: 90%;
+    }
+    .question {
+        display: flex;
+        flex-direction: column;
+    }
+    #button_bottom {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .info {
+        padding-bottom: 20px;
+    }
+    .info_bis {
+        display: flex;
+        flex-direction: column;
+    }
+    .legal {
+        margin-bottom: 10px;
+    }
 }

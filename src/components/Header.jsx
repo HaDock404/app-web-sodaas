@@ -27,7 +27,7 @@ function Header() {
     
     return (
         <header className="header3">
-            <Link to="/" className="logo3">
+            <Link to="/test" className="logo3">
                 <Logo />
             </Link>
             <nav className="nav-links3">
