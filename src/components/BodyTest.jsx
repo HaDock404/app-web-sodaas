@@ -174,6 +174,7 @@ function BodyTest() {
 
     return (
         <div className="main">
+            <Products />
             <Ad 
                 title={ad_title[language]}
                 text1={ad_text1[language]}

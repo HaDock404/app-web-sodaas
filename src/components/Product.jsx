@@ -3,7 +3,7 @@ import '../styles/product.css'
 
 function Product(props) {
     return (
-        <section className='product-section appear' style={{border: props.border}}>
+        <section className='product-section appear' style={{border: props.border}} id={props.id}>
             <div className='title-product highlight'>{props.title}</div>
             <div className='intro-product'>{props.intro}</div>
             <div className='image-product'>

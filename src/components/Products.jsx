@@ -106,6 +106,7 @@ function Products() {
     return (
         <div className='product-main' ref={boxRef}>
             <Product 
+                id='left'
                 title={title_01[language]}
                 image={Drone1}
                 border="solid 2px #D9D9D9"
@@ -122,6 +123,7 @@ function Products() {
                 style1="white"
             />
             <Product 
+                id='right'
                 title={title_02[language]}
                 image={Drone2}
                 border="solid 2px #003193"
