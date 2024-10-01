@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useContext } from 'react';
-import { LanguageContext } from './LanguageContext';
+import { LanguageContext } from './LanguageContext.jsx';
 
-import '../styles/header_final.css'
+import '../styles/header.css'
 
 import Logo from './Logo.jsx'
 import WorldIcon2 from './WorldIcon_test_2.jsx'
