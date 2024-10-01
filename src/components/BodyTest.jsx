@@ -174,6 +174,15 @@ function BodyTest() {
 
     return (
         <div className="main">
+            <Action 
+                title={action_title[language]}
+                el1={action_el1[language]}
+                el2={action_el2[language]}
+                el3={action_el3[language]}
+                el4={action_el4[language]}
+                el5={action_el5[language]}
+                text={action_text[language]}
+            />
             <Products />
             <Ad 
                 title={ad_title[language]}

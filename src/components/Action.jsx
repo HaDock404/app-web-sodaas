@@ -101,8 +101,9 @@ function Action(props) {
 
     return (
         <section className='action-section' ref={boxRef}>
+          <article className='action-article appear'>
             <h2 className='action-title'>{props.title}</h2>
-            <article className='action-image appear'>
+            <article className='action-image'>
               <div className='action-image-text'>
                 <div className='action-image_text-color' id='el1'>{props.el1}</div>
                 <div className='action-image_text-color' id='el2'>{props.el2}</div>
@@ -122,6 +123,7 @@ function Action(props) {
             <article className='action-number'>
               {props.text}
             </article>
+          </article>
         </section>
     );
 }
