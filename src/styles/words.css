@@ -1,9 +1,17 @@
 .words-section {
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.words-article {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
-    margin-bottom: 150px;
+    min-width: 600px;
     text-align: left;
 }
 
@@ -53,4 +61,11 @@
 .end-words-info-job {
     font-size: 14px;
     font-style: italic;
+}
+
+@media (max-width: 650px) {
+    .words-article {
+        width: 90%;
+        min-width: 100px;
+    }
 }

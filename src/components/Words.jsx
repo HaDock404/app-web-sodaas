@@ -27,10 +27,11 @@ function Words(props) {
 
     return (
         <section className='words-section' ref={boxRef}>
-            <article className='title-words appear'>
+          <article className='words-article appear'>
+            <article className='title-words'>
                 <span className='highlight'>{props.title}</span> 👋
             </article>
-            <article className='text-words appear'>
+            <article className='text-words'>
                 {props.part_01}
                 <br />
                 <br />
@@ -64,6 +65,7 @@ function Words(props) {
                     <div className='end-words-info-job'>{props.founder}</div>
                 </div>
             </article>
+          </article>
         </section>
     )
 }

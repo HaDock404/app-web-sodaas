@@ -180,6 +180,22 @@ function BodyTest() {
                 text2={ad_text2[language]}
                 text3={ad_text3[language]}
             />
+            <Words 
+                title={words_title[language]}
+                part_01={words_part_01[language]}
+                part_02={words_part_02[language]}
+                part_03={words_part_03[language]}
+                part_04={words_part_04[language]}
+                part_05={words_part_05[language]}
+                part_06={words_part_06[language]}
+                part_06_bis={words_part_06_bis[language]}
+                part_07={words_part_07[language]}
+                part_08={words_part_08[language]}
+                part_09={words_part_09[language]}
+                highlight_01={words_highlight_01[language]}
+                highlight_02={words_highlight_02[language]}
+                founder={words_founder[language]}
+            />
         </div>
     )
 }
