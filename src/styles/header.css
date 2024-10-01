@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header3 {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@ body {
     position: fixed;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    z-index: 9999
+    z-index: 9999;
 }
 
 .logo3 {

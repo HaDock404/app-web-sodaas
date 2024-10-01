@@ -174,7 +174,12 @@ function BodyTest() {
 
     return (
         <div className="main" style={{height: "500px"}}>
-            
+            <Ad 
+                title={ad_title[language]}
+                text1={ad_text1[language]}
+                text2={ad_text2[language]}
+                text3={ad_text3[language]}
+            />
         </div>
     )
 }

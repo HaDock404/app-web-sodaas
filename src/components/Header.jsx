@@ -26,7 +26,7 @@ function Header() {
     }
     
     return (
-        <header className="header3">
+        <header className="header">
             <Link to="/test" className="logo3">
                 <Logo />
             </Link>

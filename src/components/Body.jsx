@@ -174,7 +174,7 @@ function Body() {
 
     return (
         <div className="main">
-            <img src={BG} className='image'/>
+            <img src={BG} className='image-intro' id='testImage'/>
             <Notification text={notification_text[language]} width='250px'/>
             <Intro 
                 word_start={word_start[language]}
