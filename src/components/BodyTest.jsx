@@ -5,7 +5,7 @@ import { LanguageContext } from './LanguageContext';
 import Notification from './Notification'
 import BG from '../assets/images/bg.png'
 import Intro from './Intro'
-import Carousel from './Carousel';
+import Carousel_test from './Carousel_test';
 import Article_00 from './Article_00';
 import Article_01 from './Article_01';
 import Article_02 from './Article_02';
@@ -174,6 +174,7 @@ function BodyTest() {
 
     return (
         <div className="main">
+            <Carousel_test />
             <Article_00 
                 article_title={article_title_00[language]}
                 article_text={article_text_00[language]}

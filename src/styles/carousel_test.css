@@ -1,0 +1,379 @@
+.carousel {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    z-index: 2;
+    margin-left: 0px;
+    margin-bottom: 100px;
+}
+
+
+.ul-carousel0 {
+  width: 150%;
+  max-width: 1600px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.ul-carousel1 {
+  width: 100%;
+  max-width: 1600px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.carousel-element {
+  min-width: 250px;
+  height: 600px;
+  width: 250px;
+  margin: 15px;
+}
+
+.box_carousel {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 5s ease;
+}
+
+/*.box_carousel.show {
+    opacity: 1;
+    transform: translateY(0);
+}*/
+
+.box_carousel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#carousel_element_id2 {
+    margin-top: 150px;
+    height: 200px;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#carousel_element_id4 {
+    margin-top: 60px;
+    height: 250px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#carousel_element_id4bis {
+  margin-top: 20px;
+  height: 250px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#carousel_element_id5 {
+    margin-top: 00px;
+    height: 40px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: #2a2a2a;
+    color: white;
+    padding-left: 10px;
+    
+}
+
+.box_carousel_notification {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+}
+
+.connected {
+  color: #4ADE80;
+  font-weight: bold;
+}
+
+#carousel_element_id6 {
+    margin-top: 20px;
+    height: 300px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#carousel_element_id7 {
+    margin-top: 25px;
+    height: 125px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#carousel_element_id8 {
+    margin-top: 20px;
+    height: 120px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background: linear-gradient(90deg, #003193, #256dfc);
+    color: white;
+    padding: 10px;
+}
+
+#carousel_small {
+  font-size: 12px;
+
+}
+
+#carousel_OD {
+  font-size: 24px;
+  font-weight: bolder;
+
+}
+
+#carousel_span {
+  font-size: 10px;
+  color: rgb(39, 39, 39);
+}
+
+#carousel_AA {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+#carousel_system {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Utiliser 'relative' pour que la vidéo reste à l'intérieur du conteneur */
+    z-index: 0;
+    overflow: hidden;
+    border-radius: inherit; /* Hérite du border-radius de la boîte parente */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    display: block;
+    
+}
+
+.image_carousel {
+    width: 100%;
+    height: 100%; /* Assure que le conteneur prend toute la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Relative pour le positionnement interne */
+    overflow: hidden; /* Masque tout dépassement éventuel */
+    padding: 0; /* Suppression de tout padding éventuel */
+    margin: 0; /* Suppression des marges */
+    border-radius: inherit; /* Si tu as des coins arrondis dans le parent */
+}
+
+.image_carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre tout sans distorsion */
+    display: block;
+    padding: 0; /* Suppression de tout padding autour de l'image */
+    margin: 0; /* Supprime toute marge potentielle autour de l'image */
+    border-radius: inherit; /* Respecte les coins arrondis s'ils sont appliqués */
+}
+
+/*********************************************************************/
+
+#carousel_element_id3 {
+    margin-top: 20px;
+    height: 100px;
+    transition: opacity 2s ease, transform 2s ease;
+    background: rgba(27,26,47,1);
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box_carousel_die_message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(27,26,47,1) 100%);
+    color: #fff;
+    font-size: 24px;
+    transform-origin: center bottom;
+    opacity: 0;
+    animation: rotateMessages5 16s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.box_carousel_die_message:nth-child(1) {
+    animation-delay: 0s;
+}
+  
+  .box_carousel_die_message:nth-child(2) {
+    animation-delay: 4s;
+}
+  
+  .box_carousel_die_message:nth-child(3) {
+    animation-delay: 8s;
+}
+  
+  .box_carousel_die_message:nth-child(4) {
+    animation-delay: 12s;
+}
+
+@keyframes rotateMessages5 {
+    0% {
+      transform: translate3D(0, 100%, 0) rotateX(-90deg);
+      opacity: 0;
+      z-index: 0;
+      border-width: 0.5px 0px 0px 0px;
+    }
+    10% {
+      transform: translate3D(0, 0, 0) rotateX(0deg);
+      opacity: 1;
+      z-index: 8;
+      border-width: 0px 0px 0px 0px;
+    }
+    25% {
+      transform: translate3D(0, 0, 0) rotateX(0deg);
+      opacity: 1;
+      z-index: 8;
+      border-width: 0px 0px 0px 0px;
+    }
+    35% {
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0.5;
+      z-index: 0;
+    }
+    100% {
+      transform: translate3D(0, -100%, 0) rotateX(90deg);
+      opacity: 0;
+      z-index: 0;
+    }
+}
+
+.box_carousel_die_message_placement {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.box_carousel_die_message_github {
+    width: 10px;
+    height: 10px;
+    margin: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.box_carousel_die_message_title {
+    color: white;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.box_carousel_die_message_text {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 15px;
+  color: #545454;
+  color: #545454;
+  background: linear-gradient(90deg, #797979, #9b9a9a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.box_carousel_die_message_time {
+  color: #545454;
+  background: linear-gradient(90deg, #797979, #9b9a9a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 15px;
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.box_carousel_die_message_info {
+  color: #545454;
+  background: linear-gradient(90deg, #797979, #9b9a9a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 5px;
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 10px;
+  width: 80%;
+}
+
+/**************************************************************************/
+
+@media screen and (min-width: 1131px) {
+  .ul-carousel0 {
+    display: flex;
+  }
+  .ul-carousel1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1130px) and (min-width: 550px) {
+  .ul-carousel0 {
+    display: none;
+  }
+  .ul-carousel1 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 549px){
+  .ul-carousel0 {
+    display: none;
+  }
+  .ul-carousel1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
+  #carousel_element_id2 {
+    display: none;
+  }
+  #carousel_element_id4bis {
+    display: none;
+  }
+  .carousel-element {
+    min-width: 250px;
+    height: 100%;
+    width: 250px;
+    margin: 10px;
+  }
+  #carousel_element_id3 {
+    margin: 0px;
+  }
+  #testcar {
+    height: 100px;
+  }
+
+}
