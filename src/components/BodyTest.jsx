@@ -174,6 +174,11 @@ function BodyTest() {
 
     return (
         <div className="main">
+            <Article_01 
+                article_title={article_title_01[language]}
+                article_text={article_text_01[language]}
+                direction="row-reverse"
+            />
             <Action 
                 title={action_title[language]}
                 el1={action_el1[language]}

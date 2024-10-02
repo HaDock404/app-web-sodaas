@@ -1,10 +1,17 @@
 .section-article {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.article-article {
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: 70%;
-    margin-bottom: 150px;
-    
+    max-width: 1000px;
 }
 
 .article_appear {
@@ -24,7 +31,8 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    width: 50%;
+    width: 500px;
+    margin-left: 50px;
 }
 
 .title-article {
@@ -47,7 +55,7 @@
 .gradient-border {
   padding: 10px;
   background-color: white;
-  width: 40%;
+  width: 400px;
   height: 280px;
   border-radius: 10px;
   border: solid 0.5px #003193;
@@ -80,4 +88,43 @@
 
 #gradient-border-00 {
   padding: 20px;
+}
+
+@media screen and (max-width: 1224px) and (min-width: 431px){
+  .article-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .text-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 400px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .article-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .text-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+  .gradient-border {
+    width: 100%;
+  }
 }

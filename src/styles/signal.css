@@ -5,6 +5,14 @@
 
 }
 
+@media screen and (max-width: 430px){
+    #signal {
+        width: 60px;
+        height: 80px;
+        margin-left: 20px;
+    }
+}
+
 .no_signal {
     display: none;
 }
