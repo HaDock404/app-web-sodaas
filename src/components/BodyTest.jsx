@@ -174,6 +174,13 @@ function BodyTest() {
 
     return (
         <div className="main">
+            <Notification text={notification_text[language]} width='250px'/>
+            <Intro 
+                word_start={word_start[language]}
+                sentence={word_sentence[language]}
+                word_end={word_end[language]}
+                button={word_button1[language]}
+            />
             <Carousel_test />
             <Article_00 
                 article_title={article_title_00[language]}

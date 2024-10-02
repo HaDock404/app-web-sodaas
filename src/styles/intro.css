@@ -1,5 +1,6 @@
 .hero {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1200px;
     padding: 20px;
     position: relative;
     display: flex;
@@ -58,4 +59,13 @@ h1 {
 #diff_appearance {
     transform: translateY(0);
     transition: opacity 3s ease;
+}
+
+@media screen and (max-width: 650px) {
+    .hero {
+        width: 95%;
+    }
+    #diff_appearance {
+        font-size: 3.8rem;
+    }
 }
