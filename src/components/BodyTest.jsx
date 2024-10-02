@@ -174,6 +174,11 @@ function BodyTest() {
 
     return (
         <div className="main">
+            <Article_00 
+                article_title={article_title_00[language]}
+                article_text={article_text_00[language]}
+                image={DroneArticle}
+            />
             <Article_01 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}

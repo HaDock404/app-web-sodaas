@@ -29,15 +29,16 @@ function Article(props) {
       }, []);
 
     return (
-        <section className='section-article' style={{flexDirection: props.direction}} ref={boxRef}>
-            <article className='text-article article_appear' id='test1'>
+        <section className='section-article' ref={boxRef}>
+          <article  className='article-article0  article_appear'>
+            <article className='text-article0'>
                 <h2 className='title-article'>{props.article_title}</h2>
                 <div className='text-div'>{props.article_text}</div>
             </article>
-            <article className='gradient-border article_appear' id='gradient-border-00'>
-                <img className='article-image' src={props.image} alt="" />
-                
+            <article className='gradient-border0' id='gradient-border-00'>
+                <img className='article-image' src={props.image} alt="image" />
             </article>
+          </article>
         </section>
     )
 }
