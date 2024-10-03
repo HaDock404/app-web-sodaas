@@ -5,7 +5,7 @@ import { LanguageContext } from './LanguageContext';
 import Notification from './Notification'
 import BG from '../assets/images/bg.png'
 import Intro from './Intro'
-import Carousel_test from './Carousel';
+import Carousel from './Carousel';
 import Article_00 from './Article_00';
 import Article_01 from './Article_01';
 import Ad from './Ad';
@@ -181,12 +181,13 @@ function BodyTest() {
                 word_end={word_end[language]}
                 button={word_button1[language]}
             />
-            <Carousel_test />
+            <Carousel />
             <Article_00 
                 article_title={article_title_00[language]}
                 article_text={article_text_00[language]}
                 image={DroneArticle}
             />
+            <Chart />
             <Article_01 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}

@@ -1,12 +1,8 @@
 import '../styles/chart.css'
 import React, { useState, useEffect, useRef } from 'react';
-import Soldier from './Soldier.jsx';
-import Tablet from './Tablet'
-import Tank from './Tank'
-import AI from './AI'
-import TankTarget from './TankTarget'
 import TankIcon from './TankIcon.jsx';
 import DroneIcon from './DroneIcon.jsx';
+import Graph from './Graph.jsx'
 
 function Chart(props) {
     const [number1, setNumber1] = useState(0);
@@ -103,7 +99,7 @@ function Chart(props) {
         <section className='chart-section' ref={boxRef}>
             <h2 className='chart-big_title'>How to Win a War ?</h2>
             <article className='chart-image appear'>
-              graphique
+              <Graph />
             </article>
             <article className='chart-number'>
                 <div className="chart-text appear" ref={elementRef1}>

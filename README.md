@@ -2,12 +2,11 @@
 
 [![License](https://img.shields.io/badge/license-CC--BY--NC-orange)](LICENSE)
 
-
-no introduction  
+Drones, capable of operating without direct human intervention, pave the way for more efficient strategic solutions, minimizing risks for operators while enhancing precision and effectiveness on the battlefield.  
 
 ## Description  
 
-no description  
+This website has been designed to provide a smooth and interactive interface for exploring various aspects of autonomous military drones. Built with React, it highlights the increasing importance of artificial intelligence and automation in military operations. The site showcases the technical features of drones, their capabilities in reconnaissance, surveillance, and precision strikes, while also examining the ethical and strategic implications of their use.  
 
 ![Example](./documentation/Image1.png)
 
