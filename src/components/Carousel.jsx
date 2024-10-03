@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useContext } from 'react';
+import { LanguageContext } from './LanguageContext';
 
 import '../styles/carousel.css';
 import Drop_mp4 from '../assets/videos/drop.mp4'
@@ -11,9 +12,62 @@ import sODAAS from '../assets/images/sodaas.svg'
 import Unet from '../assets/images/unet.jpg'
 import Led from './Led';
 
-
 function Carousel() {
   const boxRef = useRef(null);
+  const { language } = useContext(LanguageContext);
+
+  const message_text_01 = {
+    en: 'Target localisation',
+    pl: 'Lokalizacja docelowa'
+  };
+  const message_time_01 = {
+    en: 'now',
+    pl: 'teraz'
+  };
+  const message_info_01 = {
+    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+  };
+  /***********************************************************/
+  const message_text_02 = {
+    en: 'Searching ..',
+    pl: 'Badawczy ..'
+  };
+  const message_time_02 = {
+    en: '10min ago',
+    pl: '10 minut temu'
+  };
+  const message_info_02 = {
+    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+  };
+  /***********************************************************/
+  const message_text_03 = {
+    en: 'Deployment & objectives',
+    pl: 'Wdrożenie & cele'
+  };
+  const message_time_03 = {
+    en: '15min ago',
+    pl: '15minut temu'
+  };
+  const message_info_03 = {
+    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+  };
+  /***********************************************************/
+  const message_text_04 = {
+    en: 'Identified vehicle',
+    pl: 'Zidentyfikowany pojazd'
+  };
+  const message_time_04 = {
+    en: '5min ago',
+    pl: '5minut temu'
+  };
+  const message_info_04 = {
+    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+  };
+  /***********************************************************/
 
   {/*useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -55,11 +109,15 @@ function Carousel() {
                           <div className='box_carousel_die_message_placement'>
                               <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
                               <div className='box_carousel_die_message_title'>sODAAS</div>
-                              <div className='box_carousel_die_message_time'>now</div>
+                              <div className='box_carousel_die_message_time'>
+                                {message_time_01[language]}
+                              </div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Target localisation</div>
+                          <div className='box_carousel_die_message_text'>
+                            {message_text_01[language]}
+                          </div>
                           <div className='box_carousel_die_message_info'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            {message_info_01[language]}
                           </div>
                       </div>
 
@@ -67,11 +125,15 @@ function Carousel() {
                           <div className='box_carousel_die_message_placement'>
                               <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
                               <div className='box_carousel_die_message_title'>sODAAS</div>
-                              <div className='box_carousel_die_message_time'>10min ago</div>
+                              <div className='box_carousel_die_message_time'>
+                                {message_time_02[language]}
+                              </div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Searching ..</div>
+                          <div className='box_carousel_die_message_text'>
+                            {message_text_02[language]}
+                          </div>
                           <div className='box_carousel_die_message_info'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            {message_info_02[language]}
                           </div>
                       </div>
 
@@ -79,11 +141,15 @@ function Carousel() {
                           <div className='box_carousel_die_message_placement'>
                               <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
                               <div className='box_carousel_die_message_title'>sODAAS</div>
-                              <div className='box_carousel_die_message_time'>15min ago</div>
+                              <div className='box_carousel_die_message_time'>
+                                {message_time_03[language]}
+                              </div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Deployment & objectives</div>
+                          <div className='box_carousel_die_message_text'>
+                            {message_text_03[language]}
+                          </div>
                           <div className='box_carousel_die_message_info'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            {message_info_03[language]}
                           </div>
                       </div>
 
@@ -91,11 +157,15 @@ function Carousel() {
                           <div className='box_carousel_die_message_placement'>
                               <img className='box_carousel_die_message_github' src={sODAAS} alt="" />
                               <div className='box_carousel_die_message_title'>sODAAS</div>
-                              <div className='box_carousel_die_message_time'>5min ago</div>
+                              <div className='box_carousel_die_message_time'>
+                                {message_time_03[language]}
+                              </div>
                           </div>
-                          <div className='box_carousel_die_message_text'>Identified vehicle</div>
+                          <div className='box_carousel_die_message_text'>
+                            {message_text_04[language]}
+                          </div>
                           <div className='box_carousel_die_message_info'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            {message_info_04[language]}
                           </div>
                       </div>
             </div>
