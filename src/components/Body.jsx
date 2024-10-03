@@ -5,10 +5,9 @@ import { LanguageContext } from './LanguageContext';
 import Notification from './Notification'
 import BG from '../assets/images/bg.png'
 import Intro from './Intro'
-import Carousel from './Carousel';
+import Carousel_test from './Carousel';
 import Article_00 from './Article_00';
 import Article_01 from './Article_01';
-import Article_02 from './Article_02';
 import Ad from './Ad';
 import Chart from './Chart';
 import Words from './Words';
@@ -17,7 +16,7 @@ import DroneArticle from '../assets/images/T-100d.jpg'
 import Action from './Action';
 
 
-function Body() {
+function BodyTest() {
     const { language } = useContext(LanguageContext);
 
     const notification_text = {
@@ -182,13 +181,12 @@ function Body() {
                 word_end={word_end[language]}
                 button={word_button1[language]}
             />
-            <Carousel />
+            <Carousel_test />
             <Article_00 
                 article_title={article_title_00[language]}
                 article_text={article_text_00[language]}
                 image={DroneArticle}
             />
-            <Chart />
             <Article_01 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}
@@ -230,4 +228,4 @@ function Body() {
     )
 }
 
-export default Body
+export default BodyTest

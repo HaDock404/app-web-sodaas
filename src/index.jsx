@@ -15,7 +15,6 @@ import reportWebVitals from './reportWebVitals.js';
 import { LanguageProvider } from './components/LanguageContext.jsx';
 
 import HomePage from './pages/HomePage.jsx';
-import HomeTest from './pages/HomeTest.jsx';
 import AboutUs from './pages/AboutUs.jsx'
 
 import ErrorPage from './components/ErrorPage.jsx';
@@ -27,7 +26,6 @@ root.render(
     <GlobalStyle/>
         <Routes>
           <Route path="/" element={<HomePage />}/>
-          <Route path="/test" element={<HomeTest />}/>
           <Route path="/About_us" element={<AboutUs />}/>
 
           <Route path="*" element={<ErrorPage />} />
