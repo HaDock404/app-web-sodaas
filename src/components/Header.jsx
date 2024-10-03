@@ -27,11 +27,11 @@ function Header() {
     
     return (
         <header className="header">
-            <Link to="/test" className="logo3">
+            <Link to="/" className="logo3">
                 <Logo />
             </Link>
             <nav className="nav-links3">
-                <Link className="underline-on-hover3" to="/app-team-sodaas/About_us">{about_us[language]}</Link>
+                <Link className="underline-on-hover3" to="/aboutUS">{about_us[language]}</Link>
                 <Link className="underline-on-hover3" to="/commitments">{commitments[language]}</Link>
                 <Link className="underline-on-hover3" to="/products">{products[language]}</Link>
                 <div className='lang-menu3'>
