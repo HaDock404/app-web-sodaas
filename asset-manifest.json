@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/app-web-sodaas/static/css/main.f402cc98.css",
-    "main.js": "/app-web-sodaas/static/js/main.8df33488.js",
+    "main.css": "/app-web-sodaas/static/css/main.3b1ec7d9.css",
+    "main.js": "/app-web-sodaas/static/js/main.3c64c2d8.js",
     "static/js/453.62efda2e.chunk.js": "/app-web-sodaas/static/js/453.62efda2e.chunk.js",
     "static/media/kamikaze.mp4": "/app-web-sodaas/static/media/kamikaze.2face6dc7b48e132a3ea.mp4",
     "static/media/drop.mp4": "/app-web-sodaas/static/media/drop.c1bee8815cf155259203.mp4",
@@ -17,12 +17,12 @@
     "static/media/unet.jpg": "/app-web-sodaas/static/media/unet.ac4e6f311d18895b45d8.jpg",
     "index.html": "/app-web-sodaas/index.html",
     "static/media/sodaas.svg": "/app-web-sodaas/static/media/sodaas.7d6a1715f01cfe9161ff6324a6235596.svg",
-    "main.f402cc98.css.map": "/app-web-sodaas/static/css/main.f402cc98.css.map",
-    "main.8df33488.js.map": "/app-web-sodaas/static/js/main.8df33488.js.map",
+    "main.3b1ec7d9.css.map": "/app-web-sodaas/static/css/main.3b1ec7d9.css.map",
+    "main.3c64c2d8.js.map": "/app-web-sodaas/static/js/main.3c64c2d8.js.map",
     "453.62efda2e.chunk.js.map": "/app-web-sodaas/static/js/453.62efda2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f402cc98.css",
-    "static/js/main.8df33488.js"
+    "static/css/main.3b1ec7d9.css",
+    "static/js/main.3c64c2d8.js"
   ]
 }
