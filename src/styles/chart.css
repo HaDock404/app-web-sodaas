@@ -7,6 +7,13 @@
     margin-bottom: 150px;
 }
 
+.chart-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .chart-image {
     width: 50%;
     height: 350px;
@@ -49,7 +56,6 @@
     background: linear-gradient(90deg, #003193, #256dfc);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
 }
 
 .appear {

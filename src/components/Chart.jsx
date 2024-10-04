@@ -97,6 +97,7 @@ function Chart(props) {
 
     return (
         <section className='chart-section' ref={boxRef}>
+          <article className='chart-article'>
             <h2 className='chart-big_title'>How to Win a War ?</h2>
             <article className='chart-image appear'>
               <Graph />
@@ -113,6 +114,7 @@ function Chart(props) {
                     <div className='text-div'>Annual maintenance cost for a military vehicle</div>
                 </div>
             </article>
+          </article>
         </section>
     );
 }
