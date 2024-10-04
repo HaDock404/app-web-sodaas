@@ -60,6 +60,7 @@
     background: linear-gradient(90deg, #003193, #256dfc);
     -webkit-background-clip: text;
     background-clip: text;
+    color: transparent;
 }
 
 .appear {
