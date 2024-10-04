@@ -99,6 +99,8 @@ function Chart(props) {
         <section className='chart-section' ref={boxRef}>
           <article className='chart-article appear'>
             <h2 className='chart-big_title'>{props.title}</h2>
+            <h2 className='chart-big_title'>...</h2>
+            <h2 className='chart-big_title'>{props.answer}</h2>
             <article className='chart-image'>
               <Graph />
             </article>

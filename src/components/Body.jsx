@@ -45,6 +45,10 @@ function BodyTest() {
         en: 'How to Win a War ?',
         pl: 'Jak wygrać Wojnę?'
     }
+    const chart_answer = {
+        en: 'Spend Less',
+        pl: 'Wydawaj Mniej'
+    }
     const chart_text1 = {
         en: 'Cost of an Autonomous Aircraft Systeme',
         pl: 'Koszt Systemu Autonomicznego statku Powietrznego'
@@ -193,6 +197,7 @@ function BodyTest() {
             />
             <Chart 
                 title={chart_title[language]}
+                answer={chart_answer[language]}
                 text1={chart_text1[language]}
                 text2={chart_text2[language]}
             />
