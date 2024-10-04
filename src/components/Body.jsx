@@ -41,6 +41,19 @@ function BodyTest() {
         pl: 'Zobowiązania'
     }
     //-----------------------------------------------//
+    const chart_title = {
+        en: 'How to Win a War ?',
+        pl: 'Jak wygrać Wojnę?'
+    }
+    const chart_text1 = {
+        en: 'Cost of an Autonomous Aircraft Systeme',
+        pl: 'Koszt Systemu Autonomicznego statku Powietrznego'
+    }
+    const chart_text2 = {
+        en: 'Annual maintenance cost for a military vehicle',
+        pl: 'Roczny koszt utrzymania pojazdu wojskowego'
+    }
+    //-----------------------------------------------//
     const article_title_00 = {
         en: 'War Changes',
         pl: 'Zmiany Wojenne'
@@ -55,15 +68,6 @@ function BodyTest() {
         pl: 'Zobacz Przyszłość'
     }
     const article_text_01 = {
-        en: 'Drones are powerful tools, conducting reconnaissance and attack missions piloted by humans. However, they are vulnerable to electromagnetic disruptions, making them unusable in strategic environments. Our technology ensures that your mission continues even in the most critical situations',
-        pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
-    }
-
-    const article_title_02 = {
-        en: 'See the Future',
-        pl: 'Zobacz Przyszłość'
-    }
-    const article_text_02 = {
         en: 'Drones are powerful tools, conducting reconnaissance and attack missions piloted by humans. However, they are vulnerable to electromagnetic disruptions, making them unusable in strategic environments. Our technology ensures that your mission continues even in the most critical situations',
         pl: 'Drony to potężne narzędzia, które wykonują misje rozpoznawcze i szturmowe pilotowane przez ludzi. Są jednak podatne na zakłócenia elektromagnetyczne, co czyni je bezużytecznymi w środowiskach strategicznych. Nasza technologia gwarantuje, że Twoja misja będzie kontynuowana nawet w najbardziej krytycznych sytuacjach.'
     }
@@ -187,7 +191,11 @@ function BodyTest() {
                 article_text={article_text_00[language]}
                 image={DroneArticle}
             />
-            <Chart />
+            <Chart 
+                title={chart_title[language]}
+                text1={chart_text1[language]}
+                text2={chart_text2[language]}
+            />
             <Article_01 
                 article_title={article_title_01[language]}
                 article_text={article_text_01[language]}

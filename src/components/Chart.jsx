@@ -97,21 +97,21 @@ function Chart(props) {
 
     return (
         <section className='chart-section' ref={boxRef}>
-          <article className='chart-article'>
-            <h2 className='chart-big_title'>How to Win a War ?</h2>
-            <article className='chart-image appear'>
+          <article className='chart-article appear'>
+            <h2 className='chart-big_title'>{props.title}</h2>
+            <article className='chart-image'>
               <Graph />
             </article>
             <article className='chart-number'>
-                <div className="chart-text appear" ref={elementRef1}>
+                <div className="chart-text" ref={elementRef1}>
                     <DroneIcon />
                     <h2 className='chart-title'>{number1.toLocaleString()}$</h2>
-                    <div className='text-div'>Cost of an Autonomous Aircraft Systeme</div>
+                    <div className='text-div'>{props.text1}</div>
                 </div>
-                <div className="chart-text appear" ref={elementRef2} id="long_appearance">
+                <div className="chart-text" ref={elementRef2} id="long_appearance">
                     <TankIcon />
                     <h2 className='chart-title'>{number2.toLocaleString()}$</h2>
-                    <div className='text-div'>Annual maintenance cost for a military vehicle</div>
+                    <div className='text-div'>{props.text2}</div>
                 </div>
             </article>
           </article>

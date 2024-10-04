@@ -579,3 +579,39 @@
         color: transparent; /* Tank target disparait */
     }
 }
+
+
+/****************************************************************************/
+
+#line1 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: draw1 4s infinite ease-in-out;
+}
+
+#line2 {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: draw2 4s infinite ease-in-out;
+}
+
+@keyframes draw1 {
+    0% {
+        stroke-dashoffset: 3000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw2 {
+    0% {
+        stroke-dashoffset: 3000;
+    }
+    65% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
