@@ -11,6 +11,7 @@ import Drone from '../assets/images/drone.JPG'
 import sODAAS from '../assets/images/sodaas.svg'
 import Unet from '../assets/images/unet.jpg'
 import Led from './Led';
+import LocalisationIcon from './LocalisationIcon';
 
 function Carousel() {
   const boxRef = useRef(null);
@@ -102,7 +103,10 @@ function Carousel() {
               <div className="video">
                 <video src={Drop_mp4} autoPlay loop muted playsInline preload="auto" />
               </div>
-              <div className='info_box'>Donbas Ukraine</div>
+              <div className='info_box'>
+                <LocalisationIcon  id="test_icon0"/>
+                Donbas, Ukraine
+              </div>
             </div>
 
             <div id='carousel_element_id3' className='box_carousel'>
@@ -193,7 +197,10 @@ function Carousel() {
               <div className="video">
                   <video src={Kamikaze_mp4} autoPlay loop muted playsInline preload="auto" />
               </div>
-              <div className='info_box'>Ukraine</div>
+              <div className='info_box'>
+                <LocalisationIcon  id="test_icon1"/>
+                Ukraine
+              </div>
             </div>
             <div id='carousel_element_id8' className='box_carousel'>
               <div id='carousel_small'>small</div>
@@ -225,6 +232,10 @@ function Carousel() {
             <div id='carousel_element_id2' className='box_carousel'>
               <div className="video">
                 <video src={Drop_mp4} autoPlay loop muted playsInline preload="auto" />
+              </div>
+              <div className='info_box'>
+                <LocalisationIcon />
+                Donbas, Ukraine
               </div>
             </div>
 
@@ -279,6 +290,7 @@ function Carousel() {
             </div>
             <div id='carousel_element_id4bis' className='box_carousel'>
               <img src={Aerial} className='image_carousel'/>
+              <div className='info_box_bis'>Semantic Segmentation</div>
             </div>
         </li>
 
@@ -295,6 +307,10 @@ function Carousel() {
             <div id='carousel_element_id7' className='box_carousel'>
               <div className="video">
                   <video src={Kamikaze_mp4} autoPlay loop muted playsInline preload="auto" />
+              </div>
+              <div className='info_box'>
+                <LocalisationIcon id="test_icon2"/>
+                Ukraine
               </div>
             </div>
             <div id='carousel_element_id8' className='box_carousel'>
