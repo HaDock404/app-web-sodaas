@@ -26,7 +26,11 @@ root.render(
     <GlobalStyle/>
         <Routes>
           <Route path="/" element={<HomePage />}/>
-          <Route path="/About_us" element={<AboutUs />}/>
+          <Route path="/aboutUS" element={<AboutUs />}/>
+          <Route path="/commitments" element={<AboutUs />}/>
+          <Route path="/products" element={<AboutUs />}/>
+          <Route path="/t100d" element={<AboutUs />}/>
+          <Route path="/t200d" element={<AboutUs />}/>
 
           <Route path="*" element={<ErrorPage />} />
         </Routes>

@@ -1,6 +1,6 @@
 import Header from '../components/Header.jsx'
 
-function AboutUs() {
+function T200d() {
     return (
         <>
             <Header />
@@ -8,4 +8,4 @@ function AboutUs() {
     )
 }
 
-export default AboutUs
+export default T200d
