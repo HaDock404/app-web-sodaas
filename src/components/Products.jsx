@@ -113,7 +113,7 @@ function Products() {
                 display="none"
                 intro={intro_01[language]}
                 button={button_01[language]}
-                link='/'
+                link='/t100d'
                 info_01={info_01_01[language]}
                 info_02={info_01_02[language]}
                 info_03={info_01_03[language]}
@@ -130,7 +130,7 @@ function Products() {
                 display=""
                 intro={intro_02[language]}
                 button={button_02[language]}
-                link='/'
+                link='/t200d'
                 info_01={info_02_01[language]}
                 info_02={info_02_02[language]}
                 info_03={info_02_03[language]}
