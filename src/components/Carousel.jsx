@@ -26,8 +26,8 @@ function Carousel() {
     pl: 'teraz'
   };
   const message_info_01 = {
-    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
+    en: '49.53246396747116,37.022983739664504 Alt: 134m',
+    pl: '49.53246396747116,37.022983739664504 Alt: 134m'
   };
   /***********************************************************/
   const message_text_02 = {
@@ -39,8 +39,8 @@ function Carousel() {
     pl: '10 minut temu'
   };
   const message_info_02 = {
-    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    en: 'Target: tanks, military vehicule, soldiers, antennas',
+    pl: 'Cel: czołgi, pojazd wojskowy, żołnierze, anteny'
   };
   /***********************************************************/
   const message_text_03 = {
@@ -52,8 +52,8 @@ function Carousel() {
     pl: '15minut temu'
   };
   const message_info_03 = {
-    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    en: 'Target search, target acquisition, target position, target destruction',
+    pl: 'Wyszukiwanie celu, nabycie celu, pozycja celu, zniszczenie celu'
   };
   /***********************************************************/
   const message_text_04 = {
@@ -65,8 +65,8 @@ function Carousel() {
     pl: '5minut temu'
   };
   const message_info_04 = {
-    en: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    pl: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    en: 'Identified vehicule: T-54 (True: 0.89, 3).',
+    pl: 'Zidentyfikowany pojazd: T-54 (True: 0.89, 3).'
   };
   /***********************************************************/
 
