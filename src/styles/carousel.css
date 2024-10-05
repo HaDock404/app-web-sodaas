@@ -69,6 +69,37 @@
     transition: opacity 1s ease, transform 1s ease;
 }
 
+.info_box {
+  position: absolute;
+  z-index: 8;
+  color: #003193;
+  background-color: white;
+  bottom: 20px;
+  right: 20px;
+  transform-origin: bottom right;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 16px;
+}
+
+.info_box_bis {
+  position: absolute;
+  z-index: 8;
+  color: white;
+  background: linear-gradient(90deg, #003193, #256dfc);
+  bottom: 20px;
+  right: 20px;
+  transform-origin: bottom right;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 16px;
+  font-weight: bolder;
+}
+
 #carousel_element_id4 {
     margin-top: 60px;
     height: 250px;

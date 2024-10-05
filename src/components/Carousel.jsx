@@ -102,6 +102,7 @@ function Carousel() {
               <div className="video">
                 <video src={Drop_mp4} autoPlay loop muted playsInline preload="auto" />
               </div>
+              <div className='info_box'>Donbas Ukraine</div>
             </div>
 
             <div id='carousel_element_id3' className='box_carousel'>
@@ -173,6 +174,7 @@ function Carousel() {
         <li className='carousel-element'>
             <div id='carousel_element_id4' className='box_carousel'>
               <img src={Aerial} className='image_carousel'/>
+              <div className='info_box_bis'>Semantic Segmentation</div>
             </div>
         </li>
         <li className='carousel-element'>
@@ -191,6 +193,7 @@ function Carousel() {
               <div className="video">
                   <video src={Kamikaze_mp4} autoPlay loop muted playsInline preload="auto" />
               </div>
+              <div className='info_box'>Ukraine</div>
             </div>
             <div id='carousel_element_id8' className='box_carousel'>
               <div id='carousel_small'>small</div>
